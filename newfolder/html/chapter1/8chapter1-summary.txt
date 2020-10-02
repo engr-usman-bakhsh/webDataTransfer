@@ -1,0 +1,10 @@
+> html pages are documents that contain text
+> html uses tags which act like containers and tell you about the information which lies between  their opening and closing tags.
+> html tells the browser how to display the contents
+> browser donot display the html tags, but use them to render the content of the page
+> usually we refer to tags as elements
+> tags usually comes in pairs. our content usually contained within the opening and closing tags the opening tag marks the begining of the content and closing tag marks the end.
+> every html element can have predefined attributes
+> attributes provide additional information about the content of an element, they appear on the opening tags and are made up of two parts: a name and a value, separated by the equal sign like name="value"
+>to learn html, you need to know the different tags available for use, what functionality they provide to our website, and where they are positioned in our html code.
+

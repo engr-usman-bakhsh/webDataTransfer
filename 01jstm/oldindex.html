@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Basics</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+
+    }
+
+    body {
+      background-color: #333;
+    }
+
+    #container {
+      border: 1px solid #000;
+      max-width: 400px;
+      max-height: auto;
+      background-color: #fff;
+      line-height: 1.8em;
+      padding: 30px;
+      margin: 20px auto;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    #addTaskText,#filter {
+      width: 100%;
+      line-height: 1.8em;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    #buttonAddTask {
+      margin: 20px 10px;
+      height: 30px;
+      width: 80px;
+      background-color: #198c8c;
+      color: #fff;
+    }
+
+    #buttonAddTask:hover {
+      background-color: #988c80;
+      color: black;
+    }
+
+    hr {
+      margin: 20px 0px;
+
+    }
+
+    #taskList {
+      margin-bottom: 20px;
+    }
+
+    li {
+      position: relative;
+      list-style-type: none;
+      border: 1px solid #000c0c;
+      line-height: 2.5em;
+      padding-left: 10px;
+      margin-bottom: 5px;
+      width: 90%;
+    }
+
+    li input.delete {
+      position: absolute;
+      top: 0px;
+      right: -30px;
+      height: 40px;
+      width: 20px;
+      background-color: red;
+      border: none;
+      color: white;
+      font-weight: bolder;
+      font-size: large;
+    }
+
+    li input.delete:hover {
+      font-size: x-large;
+    }
+
+    input#clearTask {
+      background-color: #000;
+      color: #fff;
+      height: 30px;
+      width: 100px;
+      margin-top: 20px;
+    }
+
+    input#clearTask:hover {
+      background-color: #ccc;
+      color: black;
+    }
+
+    input#clearTask:active {
+      background-color: #f4f4f4;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Task List</h1>
+    <p>New Task</p>
+    <form>
+      <input type="text" name="addTask" id="addTaskText" placeholder="Add Itoms"><br>
+      <input type="submit" id="buttonAddTask" value="Add Task" class="addTask add submit">
+    </form>
+    <hr>
+    <!-- <select >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <hr> -->
+    <div id="tasks">
+      <h2 id="taskList">Tasks</h2>
+      <div id="input">
+        <input type="text" name="filter" id="filter" placeholder="Filter Tasks">
+      </div>
+      <hr>
+      <div id="items">
+        <ul class="collection">
+          <!-- <li class="listItems">list Item <button class="cross delete"> X</button></li> -->
+          <!-- <li class="listItems">list Item 
+          <input type="button" value="X" class="cross delete"></li> -->
+        </ul>
+      </div>
+      <div class="delBtn">
+        <input type="button" value="Clear Task" id="clearTask" class="remove">
+      </div>
+    </div>
+  </div>
+  <script src="object-oriented.js"></script>
+</body>
+
+</html>

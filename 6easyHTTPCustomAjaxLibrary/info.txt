@@ -1,0 +1,8 @@
+now we are going to start to  build our customm Ajax library called easy HTTP. now in order to build this we are going to need something to test. now we are going to need a restfully API that takes get,posts,put and delete requests in order to modify some kind of resource.
+for this we are using JSON placeholder which is a fake online rest API for testing and prototyping.
+
+jsonplaceholder.typicod.com
+we are going to use this website.
+
+this website doesnot let us to actually modify data on their server. we can't actually add  a post and than it show up ontheir server.
+here what it does though is it returns a successful response and sends it. it responds with our new post. and we'll be able to see it in our application.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External APIs</title>
+  <style>
+    *,body{
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container{
+      margin: 20px;
+      padding: 20px;
+    }
+    #label{
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    #number{
+      margin-top: 20px;
+      font-size: 30px;
+      width: 180px;
+    }
+    button{
+      margin-top: 20px;
+      font-size: 20px;
+      width: 130px;
+      background-color: #fff;
+      color: #000;
+      padding: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chuck Norris Jokes Generator </h1>
+    <form >
+      <div>
+        <label for="number" id="label"> Number of Jokes</label><br>
+        <input type="number" id="number">
+      </div>
+      <div>
+        <button  class="get-jokes">Get Jokes</button>
+      </div>
+    </form>
+    <ol class="jokes">
+
+    </ol>
+  </div>
+  <script src="app.js"></script>
+  
+</body>
+</html>

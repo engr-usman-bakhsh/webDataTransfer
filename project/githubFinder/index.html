@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Finder</title>
+
+  <style>
+    nav {
+      background-color: blue;
+      padding: 10px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #alert {
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      /* display: none; */
+    }
+
+    #alert-space {}
+
+    .container,
+    #profile,
+    .latest-repos {
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    #profile,
+    .latest-repos {
+      border: none;
+    }
+
+    #repos {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    #searchUser {
+      width: 100%;
+      font-size: 30px;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    #public-repos li {
+      display: inline;
+      margin: 2px;
+      padding: 5px;
+    }
+
+    .personal-data {
+      display: inline-block;
+      list-style: none;
+    }
+
+    .personal-data li {
+      margin: 20px 10px;
+      border: solid 1px black;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .personal-data li:nth-child(even) {
+      background-color: dimgray;
+      color: white;
+    }
+
+    #public-repos li:nth-child(even) {
+      background-color: darkblue;
+      color: white;
+      font-size: 15px;
+    }
+
+    #public-repos li:nth-child(odd) {
+      background-color: darkgrey;
+      color: white;
+      font-size: 15px;
+    }
+
+    #view-profile {
+      padding: 10px;
+      line-height: 1.8rem;
+      background-color: #006028;
+      color: white;
+      border-radius: 20px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    tr td a {
+      padding: 5px;
+      color: white;
+    }
+
+    td {
+      padding: 15px;
+      color: white;
+
+    }
+
+    td:first-child {
+      background-color: white;
+    }
+
+    td:nth-child(even) {
+      background-color: #006028;
+    }
+
+    td:nth-child(odd) {
+      background-color: grey;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nevBar">
+    <nav> Github Finder</nav>
+  </div>
+  <div class="alert">
+
+  </div>
+  <!-- <div id="alert-space">
+    <br><br>
+  </div> -->
+  <div class="container">
+    <h1>Search Github User</h1>
+    <p>Enter a usename to fetch a user profile and repos</p>
+    <input type="text" name="username" id="searchUser" placeholder="Github Username...">
+  </div>
+  <div id="profile">
+  </div>
+  <div class="latest-repos">
+    <div class="repositories">
+      <table>
+      </table>
+    </div>
+  </div>
+
+  <div class="container footer">
+    <footer>
+      Github Finder &copy;
+    </footer>
+  </div>
+
+
+  <script src="./github.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

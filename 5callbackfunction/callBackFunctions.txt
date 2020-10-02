@@ -1,0 +1,6 @@
+A callback is simply a function that passed in as a parameter to another function and than it ran inside the function body, a function which is called inside the forEach loop is actually a callback.
+we have synchronous and asynchronous callbacks.
+setTimeOut is actually a callback function, its a synchronous callback.
+
+here is mimic  the action of creating a blogposton a server or through an API or dataBase. we are only using a hardcodded array but we are going to pretend that it's from a server and also getting those blogpost back.
+now in some cases the server may return the post before your new post is added and your new post wont be included. even we created a new post by running the create post function before GET post, we will learn how the mess things up by using setTimeOut.

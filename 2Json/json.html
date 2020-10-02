@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Data</title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    .container{
+      margin: 20px;
+      padding: 20px;
+    }
+    button{
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      margin: 20px;
+      font-size: 20px;
+
+    }
+    button:hover{
+      color: #fff;
+      background-color: #000;
+      font-size: 20px;
+    }
+    button:active{
+      color: #fff;
+      background-color: #000;
+      font-size: 21px;
+      padding: 9px;
+      margin: 19px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="button1"> Get Customer</button>
+    <button id="button2"> Get Customers</button>
+    <!-- // two buttons reason is that we have two JSON  Files, one for a single customer, and other is contained an array of customer objects -->
+    <br>
+    <br>
+    <br>
+    <h1>Customer</h1>
+    <div id="customer"></div>
+    <br>
+    <br>
+    <br>
+    <h1>Customers</h1>
+    <div id="customers"></div>
+  </div>
+  <script src="json.js"></script>
+
+</body>
+</html>

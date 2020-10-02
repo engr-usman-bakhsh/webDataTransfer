@@ -1,0 +1,1614 @@
+1- Bsic HTML Structure
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2- Paragraph tag
+
+<p> p shows paragraph tag, first p is opening tag and second p is closing tag. and this is content which i m writing </p>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+3- html attributes
+
+
+<p lang="us-en"> attributes are always in opening tag. these are some predefined words. </p>
+<p lang="us-en"> they are always in in name and value pair</p>
+<p lang="us-en"> here "lang" is attribute name and "us-en" is attribite value</p>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+4- firsttest
+
+
+<!DOCTYPE html> 
+<html>
+    # !DOCTYPE html will tell to our browser that we are working on latest version of html
+    # html tag is the root element of html page and contains the entire html document
+    # html tag tells to our browser that this is the starting of html code and 
+    # forward slash tells this is the end of html code
+    # in html we have two main tags or two main categories first is head and second is body.      
+    # head contains title and body contains the things which we want to show in browser
+    <head>
+        <title>my first web page</title>
+    </head>
+    <body>
+        <h1>welcome to my first web page</h1>
+        <p>this is html page that i created</p>
+    </body>
+</html>
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+5- example
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> this is the title of the page</title>
+    </head>
+    <body>
+        <h1>this is the main heading</h1>
+        <p lang="en-us"> a page may begin with introduction and followed by sub-headings</p>
+        <h2>this is first sub-heading</h2>
+        <p>a longer page may have multiple paragraphs and sub-headings</p>
+        <h2>this is second subheading</h2>
+        <p>this is another sub-heading</p>
+    </body>
+</html>
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+6- how to view the source of the webpage
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the title of the webpage</title>
+    </head>
+    <body>
+        <h1>how to view the source code of web page?</h1>
+        <p>if you right click on the page, you will see an option that allows you to see the source code behind a web page</p>
+        <p>this is the easy way for people to learn how a web page has been built</p>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+7- chapter1 summary
+
+
+> html pages are documents that contain text
+> html uses tags which act like containers and tell you about the information which lies between  their opening and closing tags.
+> html tells the browser how to display the contents
+> browser donot display the html tags, but use them to render the content of the page
+> usually we refer to tags as elements
+> tags usually comes in pairs. our content usually contained within the opening and closing tags the opening tag marks the begining of the content and closing tag marks the end.
+> every html element can have predefined attributes
+> attributes provide additional information about the content of an element, they appear on the opening tags and are made up of two parts: a name and a value, separated by the equal sign like name="value"
+>to learn html, you need to know the different tags available for use, what functionality they provide to our website, and where they are positioned in our html code.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+===============================================================================================================================================================
+
+
+                                                                          chapter 2
+
+
+
+
+
+8- website content
+
+
+>content displayed on websites in different forms liks
+> headings
+> paragraphs
+> bold text
+> italic text
+> emphases
+two types of markups
+
+1. structural markups( headings and paragraphs)
+2. semantic markups(html5 introduces it. these give additional information about markups and pages
+but they dont have effect on structure)
+we add some tags in code these tags also called markups
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+9- headings
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is the example of heading</title>
+    </head>
+    <body>
+        <h1>this is the main heading</h1>
+        <h2>this is the first sub-heading its level 2 heading</h2>
+        <h3>this is the second sub-heading its level 3 heading</h3>
+        <h4>this is the third sub-heading its level 4 heading</h4>
+        <h5>this is the fourth sub-heading its level 5 heading</h5>
+        <h6>this is the fifth sub-heading its level 6 heading</h6>
+        <p>htm5 has six level of headings</p>
+    </body>
+</html>
+
+
+
+headings are always written in body tag.
+html has six levels of headings
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+10- bold
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bold</title>
+    </head>
+    <body>
+        <p>how to make text appear bold <b>like this</b></p>
+    </body>
+</html>
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+11- italic
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Italic</title>
+    </head>
+    <body>
+        <p>how to write in italic <i>like this</i></p>
+        <p>how to make <b>bold</b> and <i>italic</i> <b><i>like this</i></b></p>
+    </body>
+</html>
+
+
+------------------------------------------------------------------------------------------------
+
+
+12- subscript and superscript
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>subscript and superscript</title>
+    </head>
+    <body>
+        <p>inventions in 21<sup>st</sup> century are remarkable</p>
+        <p>the king of acid is H<sub>2</sub>SO<sub>4</sub> </p>
+    </body>
+</html>
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+13- line break
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>line brakes</title>
+    </head>
+    <body>
+        <p>when it rains<br> water comes, <br> when it more rains <br> more water comes</p>
+    </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+14- horizontal rule
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Horizontal rule</title>
+    </head>
+    <body>
+        <p>html is used for structuring the web pages</p>
+        <hr>
+        <p> css is used for layout and presentations of web pages </p>
+    </body>
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------->
+
+
+15- semantic markup
+
+
+ther are two types of markups
+1- structure markups 2- sementic markups
+sementic markups hmary structure m koi change nai krty these are actually used for some kind of special persons
+the persons who are disabled through eyes.
+these markups are used by search engines and screen reeders
+these actually shows the emotions for these people
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+16- strong
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strong</title>
+    </head>
+    <body>
+        <p><strong>Alert</strong> the exams are not optional</p>
+        <p>exams are standarised <strong>multiple choice</strong></p>r5t
+    </body>
+</html>
+<!--strong is used to express the importance of a word. it just bold he later in web page-->
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+17- emphasis
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> emphasis</title>
+    </head>
+    <body>
+        <p> i <em>know</em> how to build a website in <em>html</em></p>
+        <p>i also <em>know</em> how to layout and present a web page using <em>css</em></p>
+    </body>
+</html>
+<!--emphasis turns the words to italic. ye b kisi bat py zor dalny k lye use hoty hen and used by screen readers-->
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+18- Quotation
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Quotation</title>
+    </head>
+    <body>
+        <blockquote cite="wikipdia.com">
+            <p>anyone who hold a true openion without understanding is like a blind man on right path</p>
+        </blockquote>
+        <p>Mr M.Ali Jinah said, <q>failure is a word unknown to me</q></p>
+    </body>
+</html>
+<!--blockquote is used for long paragraph quotation from any site and cite attribute is used for reference url of site, it moves the paragraph to the right side-->
+<!-- q is used for double quotation sign in paragraphs-->
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+19- abbreviation and acronym
+
+<!DOCTYPE html>
+<!--hr acronym abbreviation  hota hy or hr abbreviation acronym ni hota-->
+<!-- kisi b short hand form ko as a word use krna acronym kehlata hy-->
+<!-- like PIAIC is famous without knowing its abbreviation-->
+<html>
+    <head>
+        <title> abbreviation and acronym </title>
+    </head>
+    <body>
+        <p> <abbr title="Doctor"> Dr. </abbr>Arif Alvi is the president of pakistan</p>
+        <p>this cloud native specialist program is the part of the <acronym title="Presidential inititive of Artificial intelligence and computing">PIAIC</acronym></p>
+    </body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+20- address
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Address</title>
+    </head>
+    <body>
+        <address>
+            <p><a href="ehmusman@gmail.com"> mail</a></p>
+            <p>House No P-732, Street No 05, New Green Town, Millat Road Faisalabad</p>
+        </address>
+    </body>
+</html>
+<!--anything written in address will be appear as itaalic-->
+
+
+
+<a> is called anchor tag
+
+
+------------------------------------------------------------------------------------       --------------------------
+
+
+
+21- citation 
+<cite>
+
+jb b hum kisi book, research work ka ya movie ka reference deny k lye use hota hy
+
+
+<dfn>  this is defination tag
+
+these tage convert the wording style to itallic
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>citation and defination</title>
+    </head>
+    <body>
+        <p><cite>think and grew rich</cite> is a famous book</p>
+        <p><dfn>defination </dfn> tag is used to highlite the defination</p>
+    </body>
+</html>
+<!--this is the example of defination and citation tags-->
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+22- changes to content
+
+
+here we will discuss about two new tags
+a- insert  <ins></ins> 
+b- delete   <del></del>
+
+these two tags actually replace the words. its effect is same as tag  <s></s> its called strike through tag..
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> insert and delete</title>
+    </head>
+    <body>
+        <p>we use <del>HTML4</del><ins>HTML5</ins> to create the structure of webpage</p>
+        <p>Iphone 11 pro:</p>
+        <p><s>was of 1199$</s></p>
+        <p>is now 999$</p>
+    </body>
+</html>
+
+<!--we use HTML4  HTML5 to create the structure of webpage-->
+<!--yhan HTML4 py cross ki line lg jaye gi and HTML5 k neechy line lg jaye gi or wo highlite ho jaye ga-->
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+23- chapter 2 summary
+
+
+
+>>1-- HTML uses elements to describbe the structure of the webpage (e.g, headings, subheadings, paragraphs)
+>>2-- creating a page involves adding tags to the content. these tags are known as markups
+>>3-- there are two types of markups 
+      a). Structural    b). semantic
+>>4-- Structural Markups. these elements that you can use to describe both headings and paragraphs.
+>>5-- Sementic Markups.  which provides Semantic information; such as where emphasis is placed in the sentence , eh text is a quote(and who said it) or the defination  of an acronym.
+
+
+
+
+============================================================================================================================================================
+
+---------------------------------chapter 3---------------------------------------------------------
+
+
+24- LISTS
+in this topic/chapter we will learn about 4 types of lists
+    1- ordered lists     2- unordered lists(bulleted list)    3- defination list      4- nested list
+  
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+25- ordered list
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ordered List</title>
+    </head>
+    <body>
+        <p>this is the list of universitie of pakistan according to ranking </p>
+        <ol>
+            <li><abbr title="National University of Science and Technology">NUST</abbr> University</li>
+            <li><abbr title="Pakistan Institute of Engineering and Applied Sciences"> PIEAS</abbr> University</li>
+            <li><abbr title="University of Engineering and TEchnology"> UET </abbr> universitie</li>
+        </ol>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+26- unordered list
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unordered list</title>
+    </head>
+    <body>
+        <p><b><i>this is the example of unordered list</i></b></p>
+        <p>grocery itoms</p>
+        <ul>
+            <li>mutton</li>
+            <li>rice</li>
+            <li>flour</li>
+            <li>suger</li>
+            <li>vegitables </li>
+        </ul>
+    </body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+27- Defination lists
+
+<dl> this tag represents the defination list
+
+inside this we use two tags 
+<dt> = defination term(whose defination you want to tell)
+<dd> = defination data( the actual defination of that term)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>difination list</title>
+    </head>
+    <body>
+        <h1>this is the example of defination list</h1>
+        <dl>
+            <dt>physics</dt>
+            <dd>the branch of science in which we study the energy , matter and their interaction</dd>
+            <dd>the study of physical world is called <b>physich</b></dd>
+            <dt>Traffic</dt>
+            <dd>the movement of vehicles</dd>
+            <dt>Jam</dt>
+            <dd>to be stuck in the <b><i>traffic</i></b></dd>
+            <dd>A specific type of highly concentrated liquid using to serve the food</dd>
+            <dt>Automobile</dt>
+            <dd>Car</dd>
+            <dd>A vehicle moving on car</dd>
+        </dl>
+    </body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+28- Nested List
+
+list inside a list is called nested list
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested List</title>
+    </head>
+    <body>
+        <h1> this is the example of nested list</h1>
+        <p> <acronym title="Presidential Initiative of Artificial Intelligence and Computing"> PIAIC</acronym> Cloud Native Computing Specialist</p>
+        <ol>
+            <li>Quarter1 : Cloud Native Computing Specialist</li>
+            <ul>
+                <li>Introduction to cloud native computing foundation</li>
+                <li>Introduction to linux and bash</li>
+                <li>Introduction to Docker</li>
+                <li>Introduction to Kubernetese</li>
+            </ul>
+            <li>Quarter 2 : Introduction to Application Development</li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <li>Web and Mobile Application Development</li>
+            <ul>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>MongoDb</li>
+            </ul>
+            <li>Advanced Web and Mobile Application Development</li>
+            <ul>
+                <li>React</li>
+                <li>Nodejs</li>
+            </ul>
+        </ol>
+    </body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+29- Chapter3 Summary
+
+>> HTML provides three different types of lists. 1- ordered list  2- unordered list   3- defination list
+>> Ordered list organize and display the contents of the list using numbers
+>> unordered list organize and display the contents of the list using bullets
+>> Defination lists are used to define vocabulary
+>> we can create nested lists by creating list inside a list 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================================================
+
+
+-----------------------------------------------Chapter 4   Links---------------------------------------------------------------------------------------
+30- Links
+links are used for connecting different pages of a web. without links there will be no concept of a web page.
+hyper means navigation. links and hyperlinks help us to navigate, jump, connect or move from one webpage to other web page.
+we use anchor(<a></a>) tag to create the hyperlink. any thing written inside this tag becomes a hyperlink. why we need to create a hyperlink?
+we may have different situations like we want to move from one website to other or we want to jump from one section to other section on the same webpage.
+links are the binary interaction of a webpage to navigate from one document to another ddocumentby clicking on links.there are three types of target you can define
+1- anchor (used to navigate on the same page from one section to other)
+2- relative url (used to navigate different pages of same website)
+3- absolute url( used to navigate from one website to other website)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+31- Writing Links
+
+syntax:
+<a href="URL"> link text </a>
+URL may be absolute or relative. Avoid to write the 'click here'  link should be clear. 
+URL= Uniform Resource Locator
+URL consists of four main parts
+Example: http://piaic.org/docs/entrytest
+
+1- Scheme = http
+2- Server Name =  Piaic.org
+3- Path = docs
+4- Resource = entrytest
+
+URL may be absolute url and Relative url.
+
+absolute url consists on domain name. these are used to link a website with different website.
+
+if we have all files of a website inside a one directory then we use the file name simply as the relative url. we dont need to specify the domain name in relative URL.
+reletive urls help us when we ar building our website on the local PC. Relative URLs are used when we are linking to different pages of same website.
+
+ 
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Links</title>
+</head>
+<body>
+    <a href="https://web.facebook.com/ehmusman/"> my profile on facebook</a>
+</body>
+</html>
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+32- Directory Structure
+Directory is defined as its an organizational unit or container used to to organize the folders or file in a hieraracal structure. all files and folders are inside  our root folder.
+
+i have an example in a folder named as directory structure.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+33- Email Links
+
+<a href= "mailto:ehmusman@gmail.com" > contact me using email <a>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+34- opening link in new tab
+
+<a href= "abc.com" target="_blank"> web <a>
+
+by the way the default target is 
+target = "_self" means web will open in same page.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+35- Linking to a specific part of a web page.
+
+we use scroll barr to move at the specific section of a webpage. we can create links for this type of navigation. we use the id(#) attribute for jumping from one section to other.
+write lorem and hit tab. it will automatically generate a paragraph
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking to different sections of same web page</title>
+</head>
+<body>
+    <p id = "top">there are following subjects which are teaching in pakistan</p>
+    <ul>
+        <li><a href="#physics"> Physics</a></li>
+        <li><a href="#chemistry">Chemistry</a></li>
+        <li><a href="#urdu">Urdu</a></li>
+        <li><a href="#math">Math</a></li>
+        <li><a href="#isl">Isl</a></li>
+        <li><a href="#bio">Biology</a></li>
+        <li><a href="#ps">Pakistan Study</a></li>
+    </ul>
+
+    <p id= "physics">
+        <h1>Physics</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, in numquam. Perspiciatis, sint expedita soluta similique cumque quae laboriosam incidunt quo vitae non ipsam quaerat, dolor rem voluptatibus dolore quod.
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "chemistry">
+        <h1>Chemistry</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque rem animi, sit iste excepturi consectetur quas eos reprehenderit ratione ea molestias minima explicabo. Iusto ad pariatur alias reiciendis facere deleniti?
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "urdu">
+        <h1>Urdu</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui illum dolore accusantium laboriosam quam rem, inventore explicabo ipsum asperiores. Explicabo voluptates magni ratione libero laboriosam fuga voluptatem dolores commodi amet?
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "math">
+        <h1>Math</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam ratione eaque ab et suscipit? Maiores doloremque accusamus quia quaerat mollitia fuga accusantium qui eaque fugit, assumenda distinctio, recusandae ad?
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "isl">
+        <h1>Isl</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam aspernatur repudiandae unde amet aut facere itaque temporibus vero delectus laudantium, quas recusandae quaerat necessitatibus inventore blanditiis ex! Dicta, natus?
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "bio">
+        <h1>Biology</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis id perspiciatis iure enim et minima, officia odit expedita, distinctio, blanditiis animi magnam odio excepturi earum reiciendis amet repudiandae sapiente magni?
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <p id = "ps">
+        <h1>Pakistay Study</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam vero vitae consequatur temporibus ratione pariatur. Sequi sed doloremque, maiores nihil voluptates corrupti velit facilis quisquam, deserunt nisi cupiditate totam numquam!
+    </p>
+    <br><br><br>
+    <br><br><br>
+    <p><a href="#top">go to top of the page</a></p>
+</body>
+</html>
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+36-Summary of Chapter4
+
+>> to create hyperlink in HTML we use anchor tag, <a></a>
+>>the text between opening <a> tag and closing </a> tag is called the Link Text
+>>  there are two basic choices when it comes to the selection of URLs,
+    -- Absolute URL. usually used to navigate to another site.
+    -- Relative URL. usually used to navigate to the same website
+>> Anchor element always carry an attribute called href(hyperlink refference). The value of the href attribute is the URL that you want people to go to when they click  on the link text.( the value of href attribuute becomes a link)
+>> Either relative or absolute URLs may be used inside the href attribute.
+  -- when linking to a different website , the value of the href attribute will be the full web address for the website (including the domain name). this is the absolute URL
+  -- when youre linking to other pages within the same site, you can use relative URLs. Relative URLs are like a short-hand version of Absolute URLs because there is no need to specify the domain name.
+  -- relative URLs help when building a site on your computers because you can create links between pages without having to setup your domain name or hosting.
+>> to open a link in new browser window or tab you can use the target attribute in the opening <a> tag. thr value of the target attribute should be "_blank".
+>> the default value of the target attribute is "_self" which means link will open in the same window. 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================================================
+
+
+--------------------------------------------- chapter No 05 images---------------------------------------------------------------------------------
+
+37- images
+
+<img> this is an empty element means it has no closing tag. its use for adding images in the web page.it must carry two attributes, first is src and second is alt.
+in src we specify the location of images from where we are picking it this location may be online or offline. alt is used to give the alternate text untill the image is full loaded. the third attribute is title attribute. when mouse is on the image the title attribute displays. the other two attributes are image HEIGHT and image WIDTH. this method of changing height and width is old we'll use CSS for this purpose.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+38- Adding images
+
+image can be placed at three places.
+a- before a paragraph.
+b- after a paragraph
+c- between a paragraph
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images</title>
+</head>
+<body>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture">
+
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+39- Alligning images Horizontally
+
+Allighn Right
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images</title>
+</head>
+<body>
+    <p>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture" align= "right" />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus eum, tenetur, ex officia saepe vitae mollitia quidem perspiciatis, ducimus asperiores nemo laborum! Accusantium dignissimos at natus officia porro aut?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi atque eius natus voluptates alias! Architecto, sapiente iusto explicabo impedit eum necessitatibus. Nobis delectus maxime illo odit amet pariatur, sunt expedita!
+    </p>
+
+</body>
+</html>
+
+
+
+Allign Left
+/home/ehmusman/Desktop/piaic/cnc/quarter2/html/chapter5/allign_image_vertically.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images</title>
+</head>
+<body>
+    <p>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture" align= "left" />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus eum, tenetur, ex officia saepe vitae mollitia quidem perspiciatis, ducimus asperiores nemo laborum! Accusantium dignissimos at natus officia porro aut?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi atque eius natus voluptates alias! Architecto, sapiente iusto explicabo impedit eum necessitatibus. Nobis delectus maxime illo odit amet pariatur, sunt expedita!
+    </p>
+
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+40- Allign image vertically
+
+image can be alligned at three places in vertical mode
+1- align = "top"  paragraph will start from top
+2- align="middle" paragraph will start from middle of image
+3- align = "bottom" paragraph will start from the bottom of image
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images</title>
+</head>
+<body>
+    <p>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture" align= "top" />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus eum, tenetur, ex officia saepe vitae mollitia quidem perspiciatis, ducimus asperiores nemo laborum! Accusantium dignissimos at natus officia porro aut?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi atque eius natus voluptates alias! Architecto, sapiente iusto explicabo impedit eum necessitatibus. Nobis delectus maxime illo odit amet pariatur, sunt expedita!
+    </p>
+
+<hr>
+<p>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture" align= "middle" />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus eum, tenetur, ex officia saepe vitae mollitia quidem perspiciatis, ducimus asperiores nemo laborum! Accusantium dignissimos at natus officia porro aut?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi atque eius natus voluptates alias! Architecto, sapiente iusto explicabo impedit eum necessitatibus. Nobis delectus maxime illo odit amet pariatur, sunt expedita!
+    </p>
+
+    <hr>
+    <p>
+        <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture" align= "bottom" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus eum, tenetur, ex officia saepe vitae mollitia quidem perspiciatis, ducimus asperiores nemo laborum! Accusantium dignissimos at natus officia porro aut?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi atque eius natus voluptates alias! Architecto, sapiente iusto explicabo impedit eum necessitatibus. Nobis delectus maxime illo odit amet pariatur, sunt expedita!
+        </p>
+    
+
+</body>
+</html>
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+41- Three Rules for creating images
+
+1- save image in the right format
+2- save image at the right size
+3- use the correct resolution (resolution on webpage in 72 dpi) not higher from this standard . if higher than loaded slowly
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+42- Image formates
+1- JPEG is used  when there are a lot of colors are used in image
+2- PNG is used when ther are less colors are used in image like sky, grass etc
+3- PNG used as PNG and for the animated images/
+
+
+vector images are resolution independent. it quality is not effected even we change its dimensions or  zoom in or zoom out.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+43- figure and figure caption
+<figure> tag is provided by html5. <figcaption> tag is used inside <figure> tag.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images</title>
+</head>
+<body>
+<figure>
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture">
+
+    <img src="profile.png" alt="Profile Images" height="200" width="200" title="Profile Picture">
+
+    <img src="usman.jpg" alt="Profile Images" height="200" width="200" title="Profile Picture">
+<figcaption>these images are profile images</figcaption>
+</figure>
+
+</body>
+</html>
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+44- Chapter 5 summary
+
+>> the <img> element is used to add images to the webpge, 	this is an empty element which means that it has no closing tag
+>> the <img> element must carry the following two attributes
+  1- src- indicated the source of image
+  2- alt- used to describe the content of an image.
+>> the text used in the ALT attribute is referred as "ALT Text". the ALT text should provide an accurate description of the image so it may be understood accurately by screen reading software and search engine
+>>
+>> <img> is an inline element.
+>> image should be saved at the size you will be using them on the webpage and the format should be appropriate 
+>> photographs are best saved as JPEG
+>> Illustrations or logos that use flat colors are better saved as GIFs
+>> to assciate <img>element with its caption , HTML5 has introduced a new <figure> element which can contain images and their captions so that the two are associated.
+>> to add a caption to an image thr <figcaption> element may be used . this element is contained inside the <figure> element.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+===============================================================================================================================================================
+
+
+--------------------------------------------- Chapter 6 Tables -------------------------------------------------------------------------------
+
+45- tables
+tables represent the informations in a grid format. every blok of grid is called cell. there are four key elements to create tables.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+46- table structure
+
+<table>
+<tr>   table row
+<th scope="col/row">    used as <td> and abbrivated as table head, scope attribute indicated the heading for a row or a column
+<td>    table data
+vasasvasas
+</td>
+</tr>
+</table>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+47- 	spanning columns and rows
+we use an attribute of calspan.if its value is 2 its mean that one column will use the space of two columns. this attribute can be used in <th> and <td> tags.
+similarly the other attribute is "rowspan" which merges two rows.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+48- long tables
+
+we have three elements to split a table. 1-<thead> 2- <tbody> 3- <tfoot>
+it has two benefits. first it helps the screen readers.
+in CSS we can style it separately .
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+49- width and spacing
+in new websites these attributes are not used. CSS manage it. we are using it for practicing.
+
+<table width="400" cellpading="10" cellspacing="5">
+cellpading are used to give space inside each cell.
+cellspacing is used to give spaces between two cells
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+</head>
+<body>
+    <table width="400" cellpadding="10" cellspacing="1">
+        <tr> <td>we</td></tr>
+        <tr><td>are</td></tr>
+        <tr><td>now</td></tr>
+    </table>
+</body>
+</html>
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+50-Border and Background
+
+there are 147 colors which our browser can recognize we can used the hexcode of different color.
+
+
+    <table width="400" cellpadding="10" cellspacing="1" border="2" bgcolor="grey">
+        <tr> <td>we</td></tr>
+        <tr><td>are</td></tr>
+        <tr><td>now</td></tr>
+    </table>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+51- chapter 6 summary
+
+>> the <table> element is used to create the table in the webpage
+>> tables are created row by row. the <tr> element is used to create each row.
+>> cells in a row are created cell by cell. the td element is used to create each cell. in case its a header row, the <th> element is used  to create each header cell. 
+>> the rowspan and colspan attributed may be used to make cell span across rows and columns in the table.
+>> to create long tables, the <thead> , <tbody< and the <tfoot> elements may be used to split the table.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+===============================================================================================================================================================
+
+------------------------------------------------ Chapter No 7 Forms-----------------------------------------------------------------------------------
+52- Forms
+its very important topic, form is a traditional word used to provide information. its actually a printed document, we use it to provide our personal information.
+HTML borrow this concept from school,colleges,university forms. 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+53- Forms Controls.
+ >> adding text, include text input(username) , password input( to write password), text area(comment box)
+>> making choices.  radio buttons( for selecting one option from a number of given options). checkboxes(for selecting one or more options) , Drop-Down boxes( when user must pick one of a number of options from a list)
+>> Submitting forms, radio button(normal button), image button (custome buttons) , uploading files(allow user to upload a specific type of file, two buttons are used 1- browse, 2- upload)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+54- how forms work?
+
+all forms are filled in the browser, browser has its own language, when we submit it than these forms go towards the servers. servers has its own language. servers works on the provided information and according generate different types of response. informations transfers in the form of name and value pairs.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+55- Forms Structure.
+
+form control means collecting information from users. we make basic form structure from form elements. all form control are called  inside the <form> element.  <form> element always carry  "Action" attribute and its "value" is a "url" where we have to submit our forms. "Method" attribute is also used. form is filled at client side and we send forms to server by using 2 methods. these methods are "get method" or "post method". if we donot specify the method attribute than the default method is "get method". we can say the "method" attribute can have 2 values. "get" or "post". "get" method is used when form length is short. by using this method our all sent information will be displayed at the end of URL. "post" method is used to send sensitive data.
+
+When to use the GET method?
+>> with the GET method, the length of a URL is limited(2048 characters)
+>> Never use GET method to send sensitive data( data will be visible in the URL)
+>> GET method is better for non-secure data, like query strings in Google.
+-- GET method is just like the searching on google. our surched keywords are displayed in the URL.
+
+
+When to use "POST" method?
+>> POST has no size limitations and can be used to send large amount of data.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+56- Text Input
+<input> element is the most important element of forms. it has an attribute of "type". in this attribute we specify the type of input which we are getting from the user. if its value is "text" than it will provides us a single line for getting data from the user. we use input elements for all type of texts. the next attribute is "length". it specifies the length of the input data.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+67- Password Input.
+if the input type is "Password" than it will hide the characters.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+68- Text Area
+its used to create multiline text input. text which we have written in opening text area and closing text area will be appear on the page when it will be loaded.
+its a default method we can change it accordingly, it has two attributes "column" and "row".  column shows the width of text area and "rows" specify the number of rows. its also a conventional method. now a days we use CSS for doing this work.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+69- Radio Button
+radio buttons is used in gender selection. if value of input type is "radio" it will make the radio buttons. if its value is checkbox than check boxes will be made.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+70- drop down boxes.
+only one option can be selected. <select> element is used for drop-down list box. eg, selecting the home country. it can contain 2 or more <option> element. anything written in <options> elements will be shown as a list of options.
+
+we can use attribute of "multiple" with it value "multiple" in the <select> element for selecting more than one options.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+71- File- input  box.
+
+if the type attribute in table element has a value "file" than it will create a box like text-box and also it will give the browse button for selecting any type of file.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+72- Submit button
+
+if value of type attribute is submit than it will create a button to send data to servers.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+73- image button
+
+input type will be button. src,alt,hight,width attributes can also be used.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+74- labeling form control.
+
+every form control should have a separate label. label element help the visual impared persons. if we create a radio button for gender selection and keep it inside the label element, than it will made accessible the whole text are for selecting the label button.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+75- grouping form elements
+
+<fieldset> element is used to subdivide the long forms. lets say we have different portions in the forms like contact details, for office use only, education, interests etc. <legend> element is used after the <fieldset> element. this <legend> element defines the caption of the <fieldset>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+76- Form Validations
+
+if someone fill in the wrong way or any required field is not filled or wrong filled this problem is solved by HTML5. brfore this the information was sent to the server and servers highlights the mistakes and this was a time consumung procedure because this validation comes from server, HTML5 solved this problem and this validation is done from client side. HTML5 introduced the "required" attribute to solve this problem.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+77- Date input.
+we use the "date" value in input type. HTML5 will make a small calender to select the required date. date may be a departure date, date of birth etc.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+78- Forms in Practice. 
+htmls forms are one of the most important part of any website.using html forms we can create login form, signin form, data entry forms, feedback forms, online application form etc.
+<form> tag is essential in every form.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+
+<body>
+    <form action="http://www.example.com">
+        <fieldset>
+            <legend>Login Credentials</legend>
+            <p>
+                First Name:
+                <input type="text" name="firstname" size="15" maxlength="30" required>
+                <!--the name attribute inside the input element is used for server. it informs the server which value it is getting-->
+                Last Name:
+                <input type="text" name="lastname" size="15" maxlength="30" required>
+                <br>
+                <br> Username:
+                <input type="text" name="lastname" size="15" maxlength="30" required>
+            </p>
+
+            <p>
+                Password:
+                <input type="password" name="password" size="15" maxlength="30" required> Re-enter Password:
+                <input type="password" name="password" size="15" maxlength="30" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> Personal Information</legend>
+            <p>
+                Gender:
+                <input id="female" type="radio" name="gender" required>
+                <label for="female">Female</label>
+
+                <label><input type="radio" name="gender" required> Male</label>
+                <!--checked attribute can be used inside any radio input for default selection-->
+            </p>
+            <p>
+                <input type="date" name="dob">
+            </p>
+            <p>
+                Please enter your email address
+                <br>
+                <input type="email" name="email">
+            </p>
+            <p>
+                Please enter your personal website link
+                <br>
+                <input type="url" name="profile">
+            </p>
+
+            <p>
+                Nationality:
+                <!--if we give the "multiple" attribute in <select> tag, than it will be able to select the more
+                     than one option at a time by pressing the control button -->
+                <select id="country" name="country" required>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Panama">Panama</option>
+                <option value="Phillipines">Philippines</option>
+                <option value="Pitcairn Island">Pitcairn Island</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Republic of Montenegro">Republic of Montenegro</option>
+             </select>
+                <!--For form validation we use the "required" attribute in each compulsory field.-->
+            </p>
+            <p>
+                Interests: <br>
+                <label><input type="checkbox" name="interests" value="men">Wen's Clothing</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="women" > Women's Clothing</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="electronics"> Electronics</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="accessories"> Accessories</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="jewlery"> Jewlery</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="others"> Others</label>
+            </p>
+        </fieldset>
+
+        <p>
+            Comments:
+        </p>
+        <p>
+            <textarea name="comment" id="comment" cols="30" rows="10" required> enter your Comments...</textarea>
+        </p>
+        <p>
+            Upload Profile Picture
+            <input type="file" name="dp" required>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+    <p>go to <a href="../index.html"> main page</a></p>
+</body>
+
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+79- Chapter 7 Summary
+
+>> form controls live inside the <form> element. this element usually carry the following attributes
+   -- Action Attribute: the <form> element always carries the action attribute. it's value is the URL of the page that will receive the information when the form is submitted
+   -- Method Attribute: the form can be sent using one of two methods: GET or POST
+>> GET: with the get method the values from the form are added to the end of the URL specified in the action attribute. the following are further details about the GET method.
+   -- the length of URL is limited(2048 characters)
+   -- Never use GET to send the sensitive data(data will be visible in the URL)
+   -- GET methos is better for non secure data, like query strings in Google.
+   --  if the method attribute is not used, the form data will be sent using GET method.
+   --  Useful for form submission where user wants to bookmark the result
+>> POST method: with the POST method
+   -- Always use POST if the form data containes sensitive or personal information.( the post method does not display the submitted data in the page address field)
+   -- POSt has no size limitation and and can be used to send large amount of data
+   -- form submission with POST can not be bookmarked.
+   -- Data from a form is sent as name/value pairs.
+   -- Form controls may be used to collect data from the users. each form control is given a name and the text the user types in or the values of the option they 
+      select are sent to the server  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+==========================================================================================================================================================
+
+------------------------------------------------------- Chapter 8 extra  markups ---------------------------------------------------------------------------
+
+
+80- comments in html.
+<!-- comments --> comment is not shown in the browser.
+comments are used for programmer memory help. he understanded that what he has done.....
+commenting is a professional work.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+81- ID Attributes/
+every HTML element can carry ID attribute. its used for distinguishing each element. ID attribute is global attribute.
+>> its value should be start with a letter or an underscore, not a number or any other character!.
+>> ID attribute should not be a number or any other character.
+>> ID attribute should not be repeated on a page.
+>> we use ID attributes for uniquelly identification of one element from other
+
+it will be cleared gradually when i'll learn CSS that how to use the ID attribute.
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Attribute</title>
+    <style>
+        #aic {
+            background-color: rgb(150, 145, 140);
+        }
+        
+        #cnc {
+            background-color: rgb(130, 25, 100);
+        }
+        
+        #bcc {
+            background-color: rgb(30, 25, 150);
+        }
+        
+        #iot {
+            background-color: rgb(100, 80, 70);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PIAIC Courses</h1>
+
+    <h2>Artificial Intelligence</h2>
+
+    <p id="aic">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat ut reiciendis nobis nihil aut accusantium labore corporis corrupti, necessitatibus libero natus repellendus facere quas eum, distinctio sequi ratione nam?
+
+    </p>
+
+    <h2>Cloud Native Computing</h2>
+
+    <p id="cnc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laboriosam ut tempora corrupti esse recusandae obcaecati repellendus, quibusdam provident quisquam nesciunt cum dicta nemo rem cumque assumenda excepturi velit! Repellat!
+
+    </p>
+
+    <h2>BlockChain</h2>
+
+    <p id="bcc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque porro numquam similique enim dolorum reiciendis quos in inventore molestias repudiandae. Ullam minima neque sed repudiandae officiis tenetur eligendi dolor!
+
+    </p>
+
+    <h2>Internet of things</h2>
+
+    <p id="iot">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt natus dolorem libero eligendi ratione assumenda commodi voluptates dolore beatae, laudantium quas laboriosam, illum suscipit! Optio eius molestiae provident laborum ullam.
+
+    </p>
+</body>
+
+</html>
+
+
+
+we use # tag to access the id attribute
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+82- Class attribute/
+
+every html element can also carry class attribute. if we want to apply a specific style in a number of elements than we use class attribute for grouping multiple elements.
+
+we use . at start of class-name to access the classes.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Attribute</title>
+    <style>
+        .head {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PIAIC Courses</h1>
+
+    <h2 class="head">Artificial Intelligence</h2>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat ut reiciendis nobis nihil aut accusantium labore corporis corrupti, necessitatibus libero natus repellendus facere quas eum, distinctio sequi ratione nam?
+
+    </p>
+
+    <h2 class="head">Cloud Native Computing</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laboriosam ut tempora corrupti esse recusandae obcaecati repellendus, quibusdam provident quisquam nesciunt cum dicta nemo rem cumque assumenda excepturi velit! Repellat!
+
+    </p>
+
+    <h2 class="head">BlockChain</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque porro numquam similique enim dolorum reiciendis quos in inventore molestias repudiandae. Ullam minima neque sed repudiandae officiis tenetur eligendi dolor!
+
+    </p>
+
+    <h2 class="head">Internet of things</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt natus dolorem libero eligendi ratione assumenda commodi voluptates dolore beatae, laudantium quas laboriosam, illum suscipit! Optio eius molestiae provident laborum ullam.
+
+    </p>
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+83- Inline and Block Elements
+
+all elements which appear at new line in the browser window is called block level elements.
+e,g. <h1>, <p>,<li>,<ol>,<ul> etc
+all elements which don't start from new line are called inline elements
+like, <em>, <i> , <b> , <strong>, <a>, <img> etc
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+84- <div> and <span> element
+
+this element is used to manage the page structure. we use <div> elements if we want to group a set of elements in a block level box. <div> element is used for grouping the elements. <div> elements acually make the boundary in the web page.
+we can make sections using <div> elements. <div> element is block level element. <div> element acquire the whole row.
+
+<div> is block element
+and <span> is inline elenment.
+<dive> acquire the whole row. <span> take the only specifioc space in which text is written.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div vs span</title>
+</head>
+
+<body>
+    <div style="background-color: lightsalmon;"> hello</div>
+    <span style="background-color: lightslategray;"> world</span>
+    <div style="background-color: lightslategray;"> hello <span style="background-color: lime;"> world</span></div>
+    <span></span>
+</body>
+
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+85- iframe
+
+iframe is used to create a sub window inside a window. subwindow is just a frame. this fame is made by iframe. iframe has three attributes. "src", "height", "width". src contains a URL from where you are getting any video/image/audio/google-map and displaying them in that frame. 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+
+<body>
+    <h1>Iframe</h1>
+    <iframe src="https://www.facebook.com/photo?fbid=2591628951161167&set=a.1442579452732795" frameborder="1" width="300" height="400"></iframe>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+86- escape characters
+ there are some characters that are used and reserved by HTML like left and right angle brackets, yenn, doller sign, etc, these characters are not present in keyboard. what if we want use these characters? html has some reserved characters to solve this problem,
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escape characters</title>
+</head>
+
+<body>
+    <h1>escape characters</h1>
+    <p> this is how you write h1 element &lt;h1&gt;</p>
+    <p>currency of japan is &yen;</p>
+    <p>currency of uk is &pound;</p>
+    <p>all rights are reserved &copy;</p>
+</body>
+
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+87- Summary
+
+>> because there have been several version of HTML, every HTML document should start with DOCTYPE declaration so that the browser knows which version of HTML the page is using
+>> if you want to add a comment to your code that will not be visible in the user browser, you can add ccomments to your code  between th <!-- and --> markers.
+>> the id and class attributes allow you to identify particular elements on your page.
+>> the dive elements allows you to group a set of elements in one block level blocks.
+>> the <span> element acts as an inline equivalent of the <div> element.
+>> iframe cut windows into your web pages through which other pages can be displayed.
+>> escape characters are used to include special characters in your page such as, copy right sign, doller sign, yenn sign, pound sign etc.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Alhamdulillah HTML finished

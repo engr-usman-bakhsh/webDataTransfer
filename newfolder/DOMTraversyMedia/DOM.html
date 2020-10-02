@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            border: 1px black solid;
+            border-radius: 10px;
+            background: #006400;
+            color: #fff;
+        }
+
+        .header h2 {
+
+            margin-left: 50px;
+        }
+
+        .container {
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .items,
+        li {
+            border: 1px solid black;
+            padding: 10px;
+            /* margin-bottom: 10px; */
+            list-style: none;
+
+        }
+
+        #input {
+            height: 30px;
+            width: 50%;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            font-size: 20px;
+            background-color: #000;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header" id="heading">
+            <h2 id="header">Items Listner <span style="display: none;">123</span></h2>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="firstHeading"> Add Items</h2>
+        <div>
+            <input type="text" name="input Items" id="input">
+            <input type="submit" value="Submit">
+        </div>
+        <h2>Items</h2>
+        <ul id="items">
+            <li class="items" id="item1">Item1</li>
+            <li class="items" id="item2">Item2</li>
+            <li class="items" id="item3">Item3</li>
+            <li class="items" id="item4">Item4</li>
+            <li class="items" id="item5">Item5</li>
+        </ul>
+    </div>
+
+</body>
+<script src="dom.js"></script>
+
+</html>

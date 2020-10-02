@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List Project Using OOP </title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      background-color: #ccc;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 10px auto;
+      background-color: #f4f4f4;
+    }
+
+    #container1,
+    #container2 {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    #title,
+    #author,
+    #isbn {
+      width: 95%;
+      line-height: 1.8rem;
+      font-size: 1.2rem;
+      
+    }
+
+    input {
+      padding: 1px;
+      margin: 4px;
+    }
+    #output-title{
+      width: 100%;
+    }
+    table{
+      width: 100%;
+    }
+    #container3 table{
+      width: 100%;
+    }
+    #output-title li,.output li {
+      line-height: 1.8rem;
+      display: inline;
+      margin: 10px 8%;
+
+    }
+    .output {
+      position: relative;
+    }
+
+    #submit {
+      height: 30px;
+      width: 15%;
+      background-color: #fff;
+      border-radius: 20px;
+    }
+    #submit:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    #submit:active {
+      background-color: rgba(0, 0, 0, .5);
+      color: #fff;
+    }
+    .success {
+      width: 100%;
+      font-size: 1.2rem;
+      background-color: green;
+      color: #fff;
+    }
+    .error {
+      width: 100%;
+      background-color:red;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .crossButton {
+      position: absolute;
+      top: 1px;
+      right: 15px;
+      color: rgba(0, 0, 255, 1);
+      border-bottom: rgba(0, 0, 255, 1) 1px solid;
+      background-color: #fff;
+    }
+    .crossButton:hover{
+      background-color: black;
+      color: white;
+    }
+    .crossButton:active{
+      margin-top: 3px;
+      background-color: black;
+      color: white;
+    }
+    br {
+      line-height: 1.8rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="container1">
+      <h1 id="heading">Add Book to List</h1>
+      <br>
+      <div id="bookData">
+        <form id="book-form">
+          <div class="title">
+            <label for="title">Book Title</label> <br>
+            <input type="text" name="title" id="title">
+          </div>
+          <div class="author">
+            <label for="author">Author</label> <br>
+            <input type="text" name="author" id="author">
+          </div>
+          <div class="isbn">
+            <label for="isbn">ISBN#</label> <br>
+            <input type="text" name="isbn" id="isbn">
+          </div> <br>
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </div>
+    <div id="container2">
+      <div id="output-title">
+        <li>Title</li>
+        <li>Author</li>
+        <li>ISBN</li>
+      </div>
+    </div>
+    <div id="container3">
+    </div>
+  </div>
+  <script src="./appes6.js"></script>
+  <!-- <script src="./app.js"></script> -->
+
+</body>
+
+</html>

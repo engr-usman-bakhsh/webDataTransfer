@@ -1,0 +1,3 @@
+here we will talk about promisses which are the part to ES6 standards,and an alternate to callBack, or an alternative way of handeling asynchronous operations, they are called promisses because when they are doing some asynchronous operation , they promise to do something when the operation is finished,
+we handle it by using    . then
+someFunction.then(what to do when promise is completed)

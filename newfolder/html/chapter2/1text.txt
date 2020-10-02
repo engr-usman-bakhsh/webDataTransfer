@@ -1,0 +1,11 @@
+>content displayed on websites in different forms liks
+> headings
+> paragraphs
+> bold text
+> italic text
+> emphases
+two types of markups
+1. structural markups( headings and paragraphs)
+2. semantic markups(html5 introduces it. these give additional information about markups and pages
+but they dont have effect on structure)
+we add some tags in code these tags also called markups

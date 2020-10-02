@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Tracalorie Project Using Module Pattern</title>
+  <style>
+    nav {
+      background-color: #777FFF;
+      display: flex;
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+      opacity: 0.7;
+    }
+    nav li {
+      flex: 1;
+      text-align: center;
+    }
+    nav:nth-child(1){
+      flex: 2
+    }
+    #head {
+      font-size: 20px;
+      font-weight: bolder
+    }
+    #clear-btn{
+      background-color: #777FFF;
+      padding: 5px;
+      color: white;
+      font-size: 15px;
+      opacity: 1;
+    }
+    #clear-btn:hover{
+      padding: 6px;
+    }
+    #clear-btn:active{
+      padding: 7px;
+    }
+
+    .container{
+      background-color: #12347f;
+      color: white;
+      padding: 10px;
+      max-width: 1000px;
+      margin: 10px auto;
+      border: 1px solid black;
+    }
+    .container2,.container3{
+      border: none;
+      background-color: white;
+      color: black;
+    }
+    .container2{
+      text-align: center;
+    }
+    #text-container,#button-container,.listItems{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #text-container>div{
+      flex: 1;
+    }
+    #meal,#calories{
+      font-size: 15px;
+    }
+    .listItems>li{
+      flex: 1;
+      list-style: none;
+    }
+    .listItems{
+      border: 1px solid black;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .listItems>li:nth-child(1){
+      flex: 2;
+    }
+    .listItems>li:nth-child(2){
+      flex: 2;
+    }
+    .listItems>li:nth-child(3){
+      text-align: right;
+    }
+    .button-container{
+      list-style: none;
+    }
+    #button-container>li{
+    flex: 1;
+    }
+    #button-container>li:hover{
+      padding: 1px;
+    }
+    #button-container>li:active{
+      padding: 2px;
+    }
+    .add-btn>li:hover {
+      padding: 2px;
+    }
+    .add-btn>li:active {
+      padding: 3px;
+    }
+
+
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+    <li id="head" class="nav">Tracalorie</li>
+    <li><button id="clear-btn" class="nav">Clear All</button></li>
+  </nav>
+  <br>
+
+  <!--/////////////// Container One ////////////////////  -->
+  <div class="container1 container">
+    <h3>Add Meal/Food Item</h3>
+    <div id="text-container">
+      <div id="meal-container" class="item-text">
+        <label for="meal">Meal</label><br>
+        <input type="text" name="meal" id="meal">
+      </div>
+      <div id="calories-container" class="item-text">
+        <label for="calories">Calories</label><br>
+        <input type="number" name="calorie" id="calories">
+      </div>
+    </div>
+    <br>
+    <div id="button-container">
+      <li class="button-container">
+        <button id="update-btn" style="background-color: orange; color: white;padding: 5px;"><a href="#"><i class="fa fa-edit"style="font-size:20px;color: white;"></i></a> Update Meal</button>
+      </li>
+      <li class="button-container">
+        <button id="delete-btn" style="background-color: #b64029;color: white;padding: 5px;"><a href="#"><i class='fas fa-trash' style='font-size:20px;color: white;'></i></a> Delete Meal</button>
+      </li>
+      <li class="button-container">
+        <button id="back-btn" style="background-color: gray; color: #fff;padding: 5px;"><a href="#"><i class="fa fa-chevron-circle-left" style="font-size:20px;color: white;"></i></a>&nbsp; Go Back</button>
+      </li>
+    </div>
+    <br>
+    <div class="add-btn">
+      <li class="button-container">
+        <button id="add-btn" style="background-color: #414e86;color: white;padding: 5px;"><a href="#"><i class="fa fa-plus" style="font-size:20px;color: white;"></i></a> Add Meal</button>
+      </li>
+    </div>
+  </div>
+  <!--/////////////// Container Two ////////////////////  -->
+
+  <div class="total-calories container container2">
+    <h1>Total Calories: <span id="total-calories"></span></h1>
+  </div>
+  <!--/////////////// Container Three ////////////////////  -->
+
+  <div class="container3 container">
+    <!-- <div class="listItems" id="item1">
+      <li>Dinner : </li>
+      <li>Calories : </li>
+      <li><a href="#">edit<i class='fas fa-pen list-item' style='font-size:20px'></i></a></li>
+    </div> -->
+  </div>
+  <script src="./app2.js"></script>
+</body>
+
+</html>

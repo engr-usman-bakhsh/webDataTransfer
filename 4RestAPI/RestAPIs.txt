@@ -1,0 +1,30 @@
+API stands for Application Programming interface
+many many devices can have different types of APIs, even a refrigerator can have an API,
+Its a contract provided between one piece of software to other, it usually consists of structured requests in a structured response,
+
+// What is REST
+REST stands for representational state transfer
+its an architectural style for designing networked applications, and it works by  relying on a stateless clients server communication protocol and in almost all  casses this is HTTP. So REST was made to treat objects on server side as resources that can be created, updated and destroyed,
+blogPost is an example of server side object, and it usually stored in the database
+
+we can create a resourse with POST request also with delete request
+REST is awesome because it only operates with HTTP request and usually with some standard like JSON it can be used virtually with any programming language,
+
+JUST remember, API is just a messenger, and then REST lets us use the HTTP  request to format that message,
+
+REST API takes in multiple types of HTTP requests we have used GET and we'll be working on others,
+
+// Here is the different types of requests.
+
+>> GET: Retreive data from a specified user,
+>> POST: Submit data to be processed to a specified resource.
+>> PUT: Update a specified resource
+>> DELETE: delete a specifeid resource.
+
+///// these above are main 4, we'll focus on them
+
+>> HEAD: same as GET but does not return a body
+>> OPTIONS: Returns the supported HTTP method
+>> PATCH: it updates the partial resources
+
+All urls can be same but with different requests

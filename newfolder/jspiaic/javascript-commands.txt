@@ -1,0 +1,1908 @@
+1-
+>>alert("");
+this is used for popup windows to alert the user 
+2- 
+>>window.alert("hello world")
+
+
+---------------------------------------------------
+
+
+
+3- 
+>>console.log("");
+is used to print output in console or terminal
+
+
+-------------------------------------------
+
+
+
+
+4-
+>>document.write();
+its third method to see the output
+it updates the all statements of html page. jo kuch is me likha jaye ga wo browser me show hoga
+
+
+-----------------------------------------------------------------------------------
+
+
+
+5- variables
+jb hm kisi variable ko declare krty hen us ko koi value pass nai krty to wo variable undefined hota hy.
+>> var name = value;
+here value may b a string, constant or logical etc
+>> var age = 45;
+>> var nationality= "pakistani";
+>> var feepaid = true:
+
+>>var a; its mean we are declaring a variable
+>>a=63; its mean we are assigning a value to the variable
+
+
+----------------------------------------------------------------------------
+
+
+
+
+6- data types
+variables have following data types
+ Numbers(integers, float etc), String,  Boolean, Null,Undefined,Symbol, 
+these are permitive type data types
+object,functions
+these r complex data types
+
+data type defines the information which is stored in variable.
+agar variable ko just initialize kr den or koi value store na krwayen to wo variable undefined hota hy
+null is also a special data type.  its value is null,
+>> var age = null;
+null means empty. nothing is here
+
+
+difference between null and undefined?
+undefined means variable is declared but not initialized, it didnt allocate any memory location.
+null means variable is declared and also initialized but it has no value
+
+
+javascript has dynamic data type not strict data type.
+kisi b time data type change kr skty hen..
+
+
+
+-----------------------------------------------------------
+
+
+
+
+ 7- typeof operators
+
+>> var age= 35;
+>> var nationality = "pakistani"
+>>console.log(typeof age)
+>>console.log(typeof nationality)
+
+typeof is a command it tells about the data type of variable
+
+
+---------------------------------------------------------------------
+
+
+
+
+8- statements
+a computer program is a list of instructions which are executed.every instruction is a statement.
+every command is also a statement.
+these statements executed line by line.
+
+>>var a = 2; //statement1
+>>var b = 333; //statement2
+>>var c = 0; // statement3
+>>c = a + b; // statement4
+>>console.log(c); //statement5
+
+
+-------------------------------------------------------------------------
+
+
+
+
+9- end of statement
+every statement is differentiate from other statement by a semicolon even in the same line.
+in javascript semicolon is optional. if we change the line than javascript will consider it as a new statement. this is the second method to separete each statement from other. for example
+>>var a = 2  //statement1
+>>var b = 333  //statement2
+>>var c = 0  // statement3
+>>c = a + b  // statement4
+>>console.log(c)  //statement5
+
+but using semicolon is a good practice
+
+
+--------------------------------------------------------------
+
+
+
+10- expression
+
+its a combination of values, function call, operators, and all the operations which are at the left side of equal.
+ eg, 2*3, 6/4 etc are the examples of expression.
+
+jo b operation perform hota hy or uska result koi output ana hota hy wo 1 expression kehlata hy
+
+
+------------------------------------------------------------
+
+
+
+11- comments
+
+comments are very usefull and unexecutable lines in a program.
+comments are used to explain the code. these are also called code description or documentation.
+engine of javascript ignore this portion of code.
+there are two types of commenting
+
+// this is comment
+
+a paragraph is commenting like this 
+/*this slash staric is put before and after the
+paragraph. 
+this will comment all these lines */
+
+
+
+--------------------------------------------------------------
+
+
+
+
+11- legal and illegal names
+
+variable name cannot contain any space
+a variable name can contain only letter , numbers, doller signs and underscore
+the first letter must be a letter, or underscore or doller sign.
+numbers are not allowed as the first letter of the variable.
+
+
+
+
+---------------------------------------------------------------------------
+
+
+
+
+
+12- reserved keywords
+
+these can not be used as a variable
+eg, var,return,switch,while,do while, for etc
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+13- case sensitive and camel case.
+javascript is a case sensitive.
+eg,  rose and Rose are two different variables
+	
+if variable name consists of more than one words than first latter is small and subsequent latters  of every word are capital. its called camel case notation
+eg
+>> var firstName = "usman"
+if first latter is capital and others are small than its called pascal notation
+
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+14- arithmatic operators
+
+plus, minus, multiplications, division, modulus, exponents etc
+>>var a= 4;
+>>var b= 2;
+<<var c; var d; var e; var f; var g; var h;
+>>c= a+b;
+>>d= a-b;
+>>e= a*b;
+>>f= b/a;
+>>g= b%a;
+>>h=  a ** b;
+>>console.log(c)
+>>console.log(d)
+>>console.log(e)
+>>console.log(f)
+>>console.log(g)
+>>console.log(h)
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+15-  assignment operators
+ it is used to assign value to a variable
+var a =5;
+a= a+2; // assign 7 in variable a
+console.log(a);
+//or 
+a+=2;
+console.log(a);
+var b=3;
+b-=3;
+var c=3;
+c-=3;
+console.log(c);
+var d=3;
+d*=3;
+console.log(d);
+var e=3;
+e/=3;
+console.log(e);
+var g=4;
+g%=3;
+console.log(g);
+var f=3;
+f**=3;
+console.log(f);
+
+if expression is complex than BODMAS rule is applied
+
+
+
+
+
+
+-------------------------------------------------------------------
+
+
+
+
+
+
+16- increment and decrement operators
+a++ , ++a
+a--, --a
+etc
+a++ not same as ++a when its value is used by other variable.
+ 
+these are also called uniary operators.
+++a is prefix
+a++ is postfix
+
+what is the difference between prefix and postfix?
+agr hm prefix kr rhy hen ya post fix kr rhy hen or uska result kis or variable ko assign nai kr rhy to hmen koi difference nazar nai aaye ga.
+
+prefix operator first increase/decrease the value in variable and then assign result to other variable
+
+postfix operator first assign the value to other variable than increase or decrease the value in actual variable.	
+
+
+
+
+
+
+--------------------------------------------------------------------------
+
+
+
+
+17- string concatenant
+string is a special case in programming language.
++ operator especially overloaded and can only used in case of strings.
+it concatenate the two or more strings.
+ 
+expressions always evaluate left to right
+
+var a = "6"+2;  //62
+var b= "3"+6; //36
+var c = "hello "+2; //hello 2
+var d = 2 + " hello" ; // 2 hello
+var e = "hello " + 3 + 4; //hello 34
+var f = 3+4+" hello"; //7 hello
+var g = "hello " + (3+4); // hello 7 
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(f);
+console.log(g);
+
+
+
+
+ ---------------------------------------------------------------------------------
+
+
+
+
+
+
+18- Prompt or window.prompt
+it takes two inputs. first is the question which we wanting to ask and second is the default answer.
+prompt's answer is always a string. even if its a numeric number therefore in simply we can concatenate it but cannot apply arithmatic operations.
+
+var question= "what is your age";
+var answer=prompt(question);
+console.log(answer);
+answer= answer + 5;
+console.log(answer); 
+/*
+var question= "what is your name";
+var defaultAnswer= "usman bakhsh"
+var answer=prompt(question,defaultAnswer);
+answer= answer + 5
+console.log(answer); */
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+19- string to number or decimal
+
+>> parseInt()            this is a function. if the string is a number than it converts that to number data type. so we will be able to apply arithmatic operations on it
+
+
+var question= "what is your age";
+var answer=prompt(question); //input age is assumed, 25 but this 25 is string here
+var age= parseInt(answer); // now age 25 converted to number data type
+console.log("your age is " , age); // your age is 25
+newage= age + 5; // 25+5=30
+console.log("your age is increased by 5 and new age is ", newage); // your age is increased by 5 and new age is 30
+
+
+number should be present in string
+if the string is not a number than it will return NOT A NUMBER=NAN at the end
+if decimal places occur in number than parseIn will neglect the decimal part. it only deal with whole numbers
+if we want to add decimal part than we can use "parseFloat" function
+
+
+>> parseFloat()
+
+
+
+var question= "what is your age in decimal";
+var answer=prompt(question); //input age is assumed, 25.5 but this 25 is string here
+var age= parseFloat(answer); // now age 25.5 converted to number data type
+console.log("your age is " , age); // your age is 25
+newage= age + 5; // 25.5+5=30
+console.log("your age is increased by 5 and new age is ", newage); // your age is increased by 5 and new age is 30.5
+  
+
+
+>>Number()
+  the third function is Number.
+it will try its best to convert in Number data type irrespective of considering it a whole number or decimal places number. if the string is alphabet than NAN will occur
+if we write
+console.log(Number(true)) // answer is 1
+console.log(Number(false)) // answer is 0
+
+
+
+var question= "what is your age in decimal or whole number";
+var answer=prompt(question); //input age is assumed, 25.5 but this 25 is string here
+var age= Number(answer); // now age 25.5 converted to number data type
+console.log("your age is " , age); // your age is 25
+newage= age + 5; // 25.5+5=30
+console.log("your age is increased by 5 and new age is ", newage); // your age is increased by 5 and new age is 30.5
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+20- comparison operators
+
+== is equal to, === equal value and equal type, != not equal, !== not equal value or not equal type, > greater than, < less than, >=,<= etc
+
+
+var a=3;
+console.log(Number(a == 6)); //0
+console.log(Number(a === 6)); //0
+console.log(Number(a != 6)); //1
+console.log(Number(a !== 6)); //1
+console.log(Number(a > 6)); //0
+console.log(Number(a < 6)); //1
+console.log(Number(a >= 6)); //0
+console.log(Number(a <= 6)); //1
+
+
+
+== and === both are used for equality check.
+but == does not consider the data type
+=== also check the data type. === return false if the data type is not equal
+
+to use === is good practice.
+point is that == number me convert krny ki try krta hy other data type ko. === false dy deta hy agr data type hi equal na ho
+
+
+console.log(Number(a == 3)); // 1
+console.log(Number(a == "3")); // 1 its not considering the data type
+console.log(Number(a == 6)); // 0
+console.log(Number(a === 3)); // 1
+console.log(Number(a === "3")); // 0 its considering the data type also
+console.log(Number(a === 6)); // 0
+
+
+console.log(true == 1); // true
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+21- logical operators
+
+logical operators determine the logic of two variables or two expressions.
+it is used to find the range. they can be implemented to both boolean and non-boolen form.
+
+there are three logical operators
+1- AND (&&)
+2- OR  (||)
+3- NOT (!)
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+22- AND operators
+
+
+console.log(1 && 1); //1
+console.log(1 && 0);//0
+console.log(0 && 1); //0
+console.log(0 && 0); //0
+
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false);// false
+
+
+var a=60;
+var b = a> 50 && a<70;
+console.log(b); //true
+
+var c=60;
+var d = c> 50 && c<60;
+console.log(d); // false
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+23- OR operators
+
+console.log(1 || 1); //1
+console.log(1 || 0);//1
+console.log(0 || 1); //1
+console.log(0 || 0); //0
+
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false);// false
+
+var a=60;
+var b = a> 50 || a<70;
+console.log(b); //true
+
+var c=60;
+var d = c> 60 && c<70;
+console.log(d); // false
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+24- not operator
+
+
+
+var a = 60;
+var b = !(a<50);
+console.log(b); // true
+var c = 80;
+var d = !(c>50);
+console.log(d); // false
+
+
+
+var a = 60;
+var b = a>100;
+var c = !b;
+var d = !(a>100);
+console.log("A =" , a); // 60
+console.log("B =" , b); // false
+console.log("C =" , c); // true
+console.log("D =" , d); // true
+
+
+in javascript 0 is false and all other numbers are true
+
+!! operation kisi value ki presense ka pta b btata hy.
+var a = 45;
+var b = !a;
+var c = !!a
+console.log("A = ",a);
+console.log("B = ",b);
+console.log("is value present ",c);
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+ 25-   && and || operators are also called short circuit
+
+in case of && if one expression is false than there is no need to evaluate the values of others. similarly in case of || operators if one expression is true than there is no need to evaluate the values of others becaused the whole answer is also true
+
+&& ko khen b false mil jaye to wo next evaluation stop kr deta hy and whole answer is also false
+|| ko khen b true mil jaye to wo next evaluation stop kr deta hy and whole answer is also true
+
+
+
+
+comparison and logical operators are mainly used in loops
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+26- conditions
+
+a- use of IF to specify a block of code to be executed if a specified condition is true.
+b- use ELSE to specify a block of code to be executed if the same condition is false
+c- use ELSE IF to specify a new condition to test if the first condition is false
+d- use SWITCH to specify many alternative blocks of code to be executed
+
+
+syntax
+
+if (condition) {   
+      
+        //block of code to be executed if the condition is true
+
+}
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+27- else-if
+
+var a = prompt("enter your score");
+var score = Number(a);
+if (score >=90 && score <=100 ){
+    console.log("you have A+ Grade");
+}
+
+else if (score <90 && score >=80 ){
+    console.log("you have A Grade");
+}
+else if (score <80 && score >=70 ){
+    console.log("you have B Grade");
+}
+else if (score <70 && score >=60 ){
+    console.log("you have C Grade");
+}
+else if (score <60 && score >=50 ){
+    console.log("you have D Grade");
+}
+else if (score <50 && score >=40 ){
+    console.log("you have E Grade");
+}
+else if (score <40 && score >=0 ){
+    console.log("you have F Grade");
+}
+else {
+    console.log("please enter the right value");
+}
+
+
+
+
+
+
+nested if statement can also be used
+
+
+in javascript value or expression can be converted to boolean
+any value present is true 
+value not present is false
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+28- for loop
+
+
+for (initialization; condition; expression) {
+
+           // code to be executed
+
+}
+
+table ka code 
+
+
+
+var table= prompt("write the number whose table you want");
+table = Number(table);
+var length= prompt("length of table should be ")
+length = parseInt(length)
+
+for (var i = 1 ; i<= length ; i++){
+    var t = table * i;
+    console.log(table+" X "+i+" = "+t);
+    //console.log("this")
+}
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+29- for loop application
+where we can use loop?
+1- we can print any table
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+30- break and continue
+  continue sirf us iteration ko break krta hy jo iteration btai gai ho, jb k break bad me aany waal iterations ko b break kr deta hy
+
+var table= parseFloat(prompt("write the number whose table you want"));
+var length= prompt("length of table should be ")
+length = parseInt(length)
+
+for (var i = 1 ; i<= length ; i++){
+    if (i == 11){          // 11 sy aagy nai chaly ga
+        break;
+    }
+    var t = table * i;
+    console.log(table+" X "+i+" = "+t);
+    //console.log("this")
+}
+
+
+var table= parseFloat(prompt("write the number whose table you want"));
+var length= prompt("length of table should be ")
+length = parseInt(length)
+
+for (var i = 1 ; i<= length ; i++){
+    if (i == 11){    // sirf 11 wala nai chaly ga
+        continue;
+    }
+    var t = table * i;
+    console.log(table+" X "+i+" = "+t);
+    //console.log("this")
+}
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+31- to find a prime number
+
+
+var num = parseInt(prompt("enter a number, i'll display prime numbrs upto it"));
+var isPrime = true;
+
+for(var i = 2 ; i < num ; i++ ) {
+    var div = num % i;
+    if (div == 0 ){
+        console.log(num+" is not prime ")
+        isPrime = false;
+        break;      
+    }
+}
+if (isPrime == true){
+    console.log(num+" is prime ")
+}
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+32- arrays
+it is used when we have to store multiple values in a single variable. an array is used to store a collection of data. it is an ordered collection which store elements in sequence.
+
+there are two ways to make array
+
+1- creating an array using array literals(recomended) 
+>> var foods = [pizza, sandwich, snacks];                            etc..........
+>> var books = [physics , chemistry, urdu], etc.
+>> var temperature = [23, 43, 34, 32, 41, 34]
+
+
+2- creating an array using NEW keyword.
+>> var foods = new Array[pizza, sandwich, snacks];                            etc..........
+>> var books = new Array[physics , chemistry, urdu], etc.
+>> var temperature = new Array[23, 43, 34, 32, 41, 34]
+each numbers is assigned with index number. 
+
+
+array can be made from any data type.
+even array can consists on mixed data types. string and numbers can come together
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+33- accessing array
+ we can access an array by reffering the index number
+index number starts from 0.
+>> var foods = [pizza, sandwich, snacks];                            etc..........
+in above array 0 index represents the pizza, 1 index represents the sandwich, 2 index represents the snacks.
+
+and accessed by command in a code in this way.
+
+>> foods[0];   // pizza
+>> foods[1];   // sandwich
+>> foods[0];   // snacks
+
+if we call for that index which is not present than "undefined" will occur.
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+34- add-update array
+we can add more elements in the array by command.
+we can assign the value to any index number similarly as we accessed the array number.
+
+>> food[0] = "pizza"
+
+this will add "pizza" at index 0.
+
+also we can update the value in the same way
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+35- length property
+
+to find the count of the elements in an array we use following command
+>>console.log(array-name.length)
+>>console.log(foods.length)
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+36- push function
+
+array me elements add krny k lye agar hm index number use krty hen to hm track lose kr skty hen k kis number py last time element add kiya gya tha.
+
+>>food.push("pizza")
+
+hm is ko acces index number sy hi kren gy
+
+jo element sb sy last py add kiya wo sb sy pehly out ho ga if we used "pop" command like
+>>food.pop();
+
+
+// pushing elements in an array.
+// jo element sb sy last py add kiya hy wo out ho jaye ga. this is called stack. last in first out= LIFO
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+37- array data structure
+a data structure is a specialized formate for organizing, processing, retreiving and storing data.
+
+it enables efficient access and modification of data.
+
+we can use same array syntax as
+a- random access
+b- stack(last in first out) (push and pop)
+c- queue (first in first out)
+
+
+
+
+
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+38- Nested Loop
+
+loop inside a loop is called nested loop.
+
+console.log("before loop")
+for ( var i = 0; i< 5; i++){
+    for (var j=0; j<3 ; j++){
+        console.log(" I = "+i+" J = "+j)
+    }
+}
+console.log("after loop")
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+39- random access array
+
+as we have learnt yet.
+means randomly set data at any index and randomly access data from any index
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+40- stack (LIFO)
+it works like a linear data structure
+to behave as stack you have to use push and pop function;
+push function will add element at the end of the array
+pop function will remove and return last element of the array
+
+
+as we keep books top by top. last in first out strategy is adopted
+
+
+>> food.push("pizza")
+>> food.push("xyz")
+>> food.push("abc")
+
+>> food.pop()
+abc will remove
+we can store this pop value in any variable:
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+41- Queue
+first in first out 
+its like a line
+
+to behave as Queue you have to use push and shift function on array
+push function will add element at the end in the array
+shift function will remove and return first element from array.
+
+
+In QUEUE Shift is used 
+In Stack  POP is used
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+42- unshift function
+
+if we want to add new element at the start of the array we use this function
+
+push add element at the end of the array
+
+using index if we add element at the start it will replace the element not shift the elements.
+if we want to add element at first and shift the others than we will use this function
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+43- array with loops
+var books = ["phy", "chem", "urdu", "eng", "is"];
+console.log(books);
+
+console.log(books.length);
+
+for (var i = 0 ; i < books.length ; i++){
+    console.log(books[i]);
+}
+
+/*
+var books = [];
+books.push("phy");
+books.push("chem");
+books.push("eng");
+books.push("IS");
+console.log(books);
+console.log(books[0]);
+console.log(books[1]);
+console.log(books[2]);
+console.log(books[3]);
+books.pop();
+console.log(books);
+books.push("IS");
+console.log(books);
+books.shift();
+console.log(books);
+books.unshift("phy");
+console.log(books);
+*/
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+44- enter data in array using loop and prompt
+
+var books=[];
+
+for (i=0; i<=5; i++){
+    var a = prompt("enter the name of books");
+    books.push(a);
+    console.log(books);
+    console.log(books.length);
+
+}
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+45; search in array
+
+working code
+
+
+var books = ["phy", "chem", "urdu", "eng", "is"];
+console.log(books);
+console.log(books.length);
+var isBookPresent= false;
+var find_book =  prompt("enter the name of book which you want to find");
+ find_book = find_book.toLowerCase();
+for (var i = 0 ; i < books.length ; i++){
+    if (find_book === books[i]){
+        console.log(" you are searching for "+find_book+"  book and this is present in array at the location of "+i+" index number" );
+        isBookPresent= true;
+    }
+}
+if (isBookPresent == false){
+    console.log(find_book+" is out of stock");
+}
+
+
+working code 
+
+
+var num = [10,20,30,40,50,60,70];
+var input = parseInt(prompt("enter a number which you want to search"));
+ console.log("user input = "+ input);
+ var found = false;
+
+ for (i=0; i< num.length; i++){
+    if (num[i] == input){
+        console.log("found "+input+" on index "+i);
+        found = true;
+        break;
+
+    }
+}
+if (found == false){
+    console.log(input+" number is not found");
+}
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+46- splice function
+
+if we want to add element in an array at the mid of the array instead of last/end
+it will add element at a specific index an shift the others
+
+>> push           add the elements at last of the array
+>> unshift        add elements at start of the array
+>> index number.     it replaces any element according to index number 
+
+
+>> foods.splice(1,0,"sandwich")
+here 1 is showing the index number
+0 tells about how many elements you want to replace
+and last attribute is the element which we want to add
+ 
+splice ka function replaced element ko return kr skta hy is ko hm kisi variable me store kr k khen or use kr skty hen
+    
+
+
+
+var books=["phy","chem","chem"];
+console.log(books);
+
+for (var i = 0; i<=3 ; i++){
+    var input = prompt("enter the names of books");
+    var arr = books.splice(1,0,input);
+    console.log(books);
+ 
+}
+console.log(books);
+console.log(arr)
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+47- slice function
+
+it is used to extract the some part of array
+we will tell this function about starting index and ending index, but ending index is excluded
+
+>> var a = foods.slice(1,3)
+it will pick the index number 1 and 2. 3rd index will be excluded
+
+if we write in the form
+
+>>  var a = foods.slice(2) //just starting index
+
+it will pick all the elements from indicating index and will make a new array in variable a............
+
+
+
+
+
+
+var books = ["chem","math","urdu", "IS", "PS","comp"];
+console.log(books);
+var arr = books.slice(2,5);
+console.log(books);
+console.log(arr);
+var arr = books.slice(2);
+console.log(arr);
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+48- escape character
+
+these are used if we use double/single quotation inside a string
+these are  
+>> var a = "hello \"world"
+>> var a = "hello \'world"
+>> var a = "hello \\world"
+>> var a = "hello \nworld"
+>> var a = "hello \tworld"
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+49- string
+
+in javascript text is stored in the form of string data type. isko bnany ka method simle hy by using single or double quote...
+every character is assigned with an index number.
+
+>> stringname.length
+this gives the length of string
+
+we have many functions to operate on string. these helps to manipulate string like
+to find data, to change the string, to replace etc
+some functions are
+
+>> toLowerCase()    // convert all the characters to lower case
+>> toUpperCase()    // convert all the characters to upper case                           // these all functions are used in this way   string-name.function-name()
+>> slice()         // string ki kisi particular position sy character to extract krta hy eg, slice(2,6) 6 index is excluded, if index number is negative than it wil pick the words from the last,   eg a="hello world"   a.slice(-5, -2)  d is at index -1, l is at index -2 and so on. its answer is "wor" 
+>> indexOf()  // returns the index of the first occurance of a specified text in string. indexof(b) it will find b and return its index number. if b is not present it 			will return -1. indexof(b,10) here 10 represent that finf the sspecified number after the index 10. if we not mention the number than default number is 		0. it search the number from left to right.
+ 
+>> lastIndexOff() // it search the number from right to left. but index numbers are used as they are, we can pass 2 arguments in itt as in the previous.
+>> charAt()  // it returns the character  any index number from a string. in slice we give the range. but it is used to pick a particular character from a string.
+             var a = " to be or not to be",     
+             var b = a.charAt(7)    // it will return "r"  
+>> replace()  // string me kisi particular index py character ko replace krny k lye ye function use hota hy.
+	      	 var a = " to be or not to be",     
+	         var b = a.charAt("be", "hello")    // it will return "to hello or not to be"  this function does not make changes in existing string, actually it 			 gives a new string which is stored in a new variable. it only replace the first occurance by default. if you want to replace all the occurance then 
+                 use the following syntax.
+                 var b = a.charAt(/be/g, "hello") ... // lets g means globally. this function is case sensitive, if you mention the capital word it will only replace 			 the capital. it has no concer with small letters than.
+                  var a = " To be or not to be",     
+                  var b = a.replace(/to/i,"hello")    // it will return " hello be or not to be"
+                individually it replaced the capital lette even i mentioned the small t. it we want to replace all the words than use the both 'i' and 'g' flag at a 			time. like      
+                 var b = a.replace(/to/gi,"hello")    // it will return " hello be or not hello be"
+
+        
+>> split()   // it breakes the string and returns the array of the remaining characters. split can be done with commas, spaces or any character. means jhan jhan py 			commas ya space ya koi specific character a jaye whan whan sy string ko split krna hy or 1 array bnani hy.
+             >> var str = " to be or not to be";
+	     >> var a = str.split(" ")     // here this is a space inside the inverted commas. it will return an array in the form
+
+               [ "to" , "be" , "or" , "not" , "to" , "be"]
+
+
+there are a few more string functions you can learn. like
+1- charCodeAt(), 2- concat(),  3- endsWith(),  4-includes(),  5-match(),  6- repeat(),   7- replace(), 8- search(), 9- startsWith(),  10- substr(), 11- substring(),
+12- trim()
+
+
+
+ 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+50-  math class round.
+ math class is a built in class of javascript. it have provided many built in function to perform mathematical operation on any numeric value. for example 
+to round off the values, to apply floor ceil, to find square root, to generate a random number, to find trignomatric identities,
+
+
+// math.ceil,    it rounds the number to the upper side
+
+// math.round  it rounds the number to both upper and lower side according to condition
+
+// math.floor,    it rounds the number to the lower side
+
+>> math.random(); // it generates a number between 0(inclusive) and 1(exclusively) 
+
+var num = Math.random();
+var num2 = (num * 6) + 1;
+var dice = Math.floor(num2);
+console.log(dice);
+
+this code is used to roll a dice.
+
+
+
+there are more few math functions like 
+1- Math.pow(), 2- Math.sqrt(). 3-Math.abs(), 4- Math.sin(), 5- Math.cos(), 6-Math.min(), 7- Math.max(), 8- Math.exp(), 9- Math.log().
+
+
+
+>> var  average = (15 + 23 + 39 ) / 3;   // let it gives 25.66666666666666666666666666667
+to limit decimal places to a fixed number you can call toFixed function like
+>> var avg = average.toFixed(3);   // it will give  25.667
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+51- Date,
+in javascript you might have to create a website with a calender , a train schadual, or interface to setup an appointment from doctor,
+these applications need to show relevent times based on the users current time zone
+you might need to use javascript to generate a report at a certain time everyday,
+
+the Date is a built in object in javascript that stores the date and time,
+it provides a number of built in methods for formatting and managing the data
+date objects are created with new Date().
+
+
+>> var date = new Date();
+>> console.log(date);
+this will be created according to the current computers system setting.
+it will show complete date with current time zone , if you change the time zone of your computer it will show different date,
+
+
+there are 4 ways to create a new date object,
+1- new Date()
+2- new Date(year, month, day, hours, minutes, seconds, milliseconds)
+3- new Date(milliseconds)
+4- new Date(date string)
+
+these ways are just used to input the date according to our desire, its just a formate.
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+52- functions.
+function is an important element of any programming language.
+if we want to execute a code again and again than functions are used.
+
+1- a function is a block of javascript that does the same thing again and again.
+2-a javascript function is executed when "something" invokes(calls) it.
+3- it saves your repetitive coding and makes your code easier to understand.
+4- you can define the code once and use it many times.
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+53- function declaration and invoking
+a function is a block of code which will run when you want and call it
+
+how to make a function?
+
+rules which we follow in naming variables are the same follow in naming function
+
+1-a javascript function is defined with function keyword, followed by a name, followed by a parenthesis().
+2- function names can contain letters, digits, underscore and doller signs (same rule as variables)
+3- the parenthesis may include parameter names separated by commas.(parameter1, parameter2, .....)
+4- the code to be executed by the function is placed inside a curly brackets:{}
+
+
+for example
+a function to find the average  of numbers
+
+>> function calculate_average(  parameters ){
+		// code to be executed
+                    }
+
+actually parameters are used for customization.
+
+
+A- Declaration   
+    function showMessage(message){
+       console.log(message);
+   }
+
+B- Invoking           // you can invoke function by refffering the function name, followed by and open and closed parenthesis().
+   
+showMessage("hello world")
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+54- parameters and arguments.
+
+
+A-  Parameters- 
+     a-  function  parameters are listed inside the parentheses() in the function defination
+B- Arguments-
+     a- function arguments are the values received by the function when it is invoked.
+
+
+oper example me function ko declare krty time jo parentheses me "message" likha tha wo parameter hy or function ko call krty time jo parentheses me "hello world" likha hy to argument hy.
+
+
+function example 
+
+
+console.log("Before Function");
+
+function showMesage(){
+    console.log("hello world")
+}
+console.log("After Function");
+ showMesage();
+console.log("After Function calling");
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+
+
+
+
+
+55- passing data to function
+
+
+// pasing value to function
+
+function multiply(num1, num2){
+    var num3 = num1 * num2;
+    console.log(num3);
+}
+
+multiply(2,4);
+multiply(4,43);
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+56- parameter rule
+
+1- javascript function definations do not specify data types for parameters
+2- javascript function do not perform type checking on the passed arguments,
+3- javascript functions do not check the numbers of argument received
+4- if a function is called with missing arguments ( less than declared) the missing values are set to undefined.
+
+
+
+
+functions can be used inside an expression. 
+>> return    // this is used for returning value from a function and we can store it in any variable and execute some functions on it according to requirement.
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+57-  local and global variables.
+
+1- variables can have local or global scope
+2- a global variable is one thats declared in the main body of your code not inside a function
+3- a local variable is the one that's declared inside a function
+4- a local variable can be either a parameter of the function which is declared implicitly by being named as a parameter, or a variable declared explicitly in the function with the "var" keyword.
+
+
+global variables inside and outside the function avaialable hoty hen but local variables only function k inside hi available hoty hen
+
+
+5- global variable is meaningfull in every section of your code, whether that code is in the main body or in aany of the function.
+6- local variable is one that's meaningfull only within the function that declares it
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+58- global variable without var keyword
+
+1- if you create variable without var keyword it will be global variable not matter where you have created it.
+2- variable created without var inside function it be global variable.
+3- variable created without var in main body/code will be global variable.
+4- itis recomended to use variable with var keyword to have defined context.
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+59- function expression
+
+in javascript function is also a data type. its data type is object,  as we store numbers, string, array in any variable we can store a function in any variable. this is called function expression
+
+>> var sum = function (a,b){   // function as expression
+     return a+b;
+};
+>> var c = sum(a+b);
+>> console.log(c);
+
+ function expression ki curly bracket k last py semicolon lgaty hen
+
+
+var sum = function(num1, num2){
+    return num1 + num2 ;
+};
+
+var c = sum(3 , 9);
+console.log(c);
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+60- function Hoisting
+
+1- Hoisting is the javascript's default behaviour of moving declaration to the top of the current scope.
+2- Hoisting is applied to variable declaration and to function declaration
+3- because of this javascript functions can be called before they are declared
+
+
+
+koi b variable ye function kisi b jga py likhen javascript is ko start lines me ly ja k us ki declaration kr deta hy is lye function ko declare bad me kr k b pehly call kiya ja skta hy
+
+declaration of variable and function is always on the top.
+>> console.log(a);   // it will give undefined error because we have not yet declare the variable.
+>> var a = 6; // this is not variable declaration its variable declaration and initialization
+
+it wrong
+variable declaration is such that
+
+>> var a;
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+61- Argument passed value and reference
+// argument passed by value
+var arr = [1, 2, 3, 4];
+function updateArray(val){
+    val[1]=50;
+}
+console.log(arr[1]);
+updateArray(arr);
+console.log(arr[1]);
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+62- recursive function
+if a function cal itself is called recursive function. its example is factorial
+
+// recursive function
+
+function factorial(a){
+    if (a <= 1 ){
+        return 1 ;
+    }
+    else {
+        return a * factorial(a - 1);
+    }
+}
+a = prompt(" enter the number whose factorial you want to find");
+console.log(factorial(a));
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+63- switch statement
+
+it executes different block of codes based on different cases. jo case match kry ga uska block of code execute kr dya jaye ga. its a part of if than statements but here the difference is that only equality is checking in it. 
+
+switch statement works for equality checks only , you cannot apply range greater than or less than checks.
+
+for equality checks its best
+like to find the vowel numbers
+
+syntax
+
+switch (expression){
+
+case 'value1':    
+      code block 
+      
+      break;
+
+case 'value2':    
+      code block 
+      
+      break;
+
+case 'value3':    
+      code block 
+      
+      break;
+
+default:    
+      code block 
+      break;
+
+
+}
+
+
+// Grouping of cases
+agr hm break ko nikal dety hen to jonsa case satisfy kry ga usky bad waly b automatically chal jayen gy. is tra more than one case group ho jayen gy
+
+
+switch used strict comparison (===) so it also check the value as well as the type of variable.
+
+
+alpha = prompt("enter an alphabet ");
+switch (alpha){
+    case "a": 
+    console.log("you entered a vowel word ");
+    break; 
+    case "e": 
+    console.log("you entered a vowel word ");
+    break; 
+    case "i": 
+    console.log("you entered a vowel word ");
+    break; 
+    case "o": 
+    console.log("you entered a vowel word ");
+    break; 
+    case "u": 
+    console.log("you entered a vowel word ");
+    break; 
+    default: 
+    console.log("you didn't enter a vowel word ");
+    break; 
+
+}
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+64- while loop
+
+
+while (condition) {
+      // code block to be executed
+
+}
+
+
+
+
+// in do while loop first code is executed and than condition is checked. if condition is false the code will be executed at least one time. 
+each time first code is executed than condition is checked
+
+
+do {
+  
+    // code to be executed
+
+}
+while(condition);
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
