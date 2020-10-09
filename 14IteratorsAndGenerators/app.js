@@ -48,11 +48,11 @@
 ////////////////////////////////////////////////////
 
 // ID creators
-function* createdIDs(){
-  let index =0;
-  while(true){
-    yield index++;
-  }
+function* createdIDs() {
+    let index = 0;
+    while (true) {
+        yield index++;
+    }
 }
 const gen = createdIDs();
 console.log(`input${gen.next().value}`)

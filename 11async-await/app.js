@@ -9,49 +9,51 @@
 
 // if we add async before function it will return a promise
 
-// async function myFunc(){
-// const promise = new Promise((resolve,reject) => {
-//   setTimeout(() => resolve('Hello'), 2000);
-// });
-// const res = await promise;   // await, waits the promise to be resolved untill it actually sends the response.
-// return res;
+// async function myFunc() {
+//     const promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve('Hello'), 2000);
+//         reject("some thing went wrong");
+//     });
+//     const res = await promise; // await, waits the promise to be resolved untill it actually sends the response.
+//     return res;
 // }
 // myFunc()
-//   .then(res => console.log(res))
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err))
 
 
 
 // // Fabricating an error
 // async function myFunc() {
-//   const promise = new Promise((resolve, reject) => {
-//     setTimeout(() => resolve('Hello'), 2000);
-//   });
-//   const error = false;
-//   if (!error) {
-//     const res = await promise;
-//     return res;
-//   } else {
-//     await Promise.reject(new Error('Something went wrong'))
-//   }
+//     const promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve('Hello'), 2000);
+//     });
+//     const error = false;
+//     if (!error) {
+//         const res = await promise;
+//         return res;
+//     } else {
+//         await Promise.reject(new Error('Something went wrong'))
+//     }
 // }
 // myFunc()
-//   .then(res => console.log(res))
-//   .catch (err => console.log(err))
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err))
 
 
 
 /////////////////////////////////////////////////////////////////
 // here is the best example for async and await using fetch
 
-async function getUsers(){
-  // await response of the fetch call
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+async function getUsers() {
+    // await response of the fetch call
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
 
-  // Only proceeds once its resolved
-  const data = await response.json();
+    // Only proceeds once its resolved
+    const data = await response.json();
 
-  // only proceeds once second promise resolved
-  return data;
+    // only proceeds once second promise resolved
+    return data;
 }
 
 getUsers().then(user => console.log(user))

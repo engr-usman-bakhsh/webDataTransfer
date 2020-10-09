@@ -4,7 +4,7 @@
 // here we are not using any module, we are using hardcodded data in the same file
 
 // Destructuring Assignment
-let a,b;
+let a, b;
 // [a,b] = [100, 200];
 // console.log(a) // we get 100
 // console.log(b) // we get 200
@@ -32,7 +32,7 @@ let a,b;
 // How can we use it in our project?
 // we are going to learn the way how to use them
 
-// const people = ['usma','farooq','ehsan']
+// const people = ['usman','farooq','ehsan']
 // const [person1 , person2, person3] = people
 // console.log(person1)
 // console.log(person2)
@@ -53,14 +53,14 @@ let a,b;
 
 
 // Object Destructuring
-const person ={
-  name: 'Usman',
-  age: 25,
-  city: 'Faisalabad',
-  gender: 'Male',
-  sayHello: function(){
-    console.log('Hello')
-  }
+const person = {
+    name: 'Usman',
+    age: 25,
+    city: 'Faisalabad',
+    gender: 'Male',
+    sayHello: function() {
+        console.log('Hello')
+    }
 }
 
 // Old ES5
@@ -69,11 +69,11 @@ const person ={
 //       city = person.city,
 //       gender = person.gender;
 //       sayHello = person.sayHello;
-  
+
 // console.log(name,age,city,gender)
 
 // New ES6 Destructuring
-const {name,age,city,gender,sayHello } = person;
-console.log(name,age,city,gender)
-// this is much cleaner
+const { name, age, city, gender, sayHello } = person;
+console.log(name, age, city, gender)
+    // this is much cleaner
 sayHello()

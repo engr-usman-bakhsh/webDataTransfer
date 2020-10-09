@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Styling</title>
+  <style>
+    body {
+      padding: 20px;
+      margin: 0;
+      background: #2f3479;
+      color: #fff;
+    }
+
+    .container {
+      border: 1px solid #333;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      line-height: 1.4em;
+      max-width: 350px;
+      margin: 30px auto;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 0px;
+    }
+
+    div h1 {
+      text-align: center;
+    }
+
+    div p {
+      text-align: center;
+    }
+
+    #input {
+      margin-bottom: 10px;
+    }
+
+    #input {
+      width: 100%;
+    }
+
+    .container .input input {
+      width: 100%;
+      height: 30px;
+    }
+
+    #termAndPrivacy p {
+      text-align: center;
+    }
+
+    #button input {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+      background: #51764a;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    a:hover {
+      background: #27496a;
+      color: #a8b6c3;
+    }
+
+    #footer footer a:hover {
+      color: white;
+      background: blue;
+    }
+
+    #button input:hover {
+      background: blue;
+      color: white;
+    }
+
+    #button input:active {
+      background: black;
+      color: white;
+    }
+    #reset {
+      display: inline-block;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <h1>Sign Up</h1>
+    <p>It's free and only takes a minute</p>
+    <form action="#" method="post">
+    <div id="input" class="input">
+      <label for="fname">First Name</label> <br>
+      <input type="text" name="fname" id="fname" placeholder="First Name" >
+    </div>
+    <div id="input" class="input">
+      <label for="lname">Last Name</label><br>
+      <input type="text" name="lname" id="lname" placeholder="Last Name">
+    </div>
+    <div id="input" class="input">
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Like abc@xyz.com">
+    </div>
+    <div id="input" class="input">
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="password" placeholder="Use Strong Password">
+    </div>
+    <div id="input" class="input">
+      <label for="confirmPassword">Confirm Password</label> <br>
+      <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-enter Password">
+    </div>
+    <div id="button">
+      <input type="button" value="Sign Up">
+    </div>
+    <div id="reset">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+    <div id="termsAndPrivacy">
+      <p>By clicking the Sign Up button, you are agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+          Policy</a></p>
+    </div>
+
+
+  </div>
+  <div id="footer">
+    <footer>Already have an account? <a href="#"> Login Here</a></footer>
+  </div>
+</body>
+
+</html>

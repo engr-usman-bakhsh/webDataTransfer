@@ -42,13 +42,12 @@
 // sayHellow('Usman','Bakhsh'); 
 
 
-// Simple Functions as a callBack
-// const users = ['usman','farooq','ehsan'];
-// const nameLength = users.map(function(name){
-//   return name.length;
+// // Simple Functions as a callBack
+// const users = ['usman', 'farooq', 'ehsan'];
+// const nameLength = users.map(function(name) {
+//     return name.length;
 // });
 // console.log(nameLength);
-
 
 
 // Arrow functions as a callback (shorter)
@@ -60,6 +59,6 @@
 
 
 // // Arrow functions as a callback (shortest)
-// const users = ['usman','farooq','ehsan'];
+// const users = ['usman', 'farooq', 'ehsan'];
 // const nameLength = users.map((name => name.length))
 // console.log(nameLength);

@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Scroller</title>
-  <style>
-    .container,h3{
-      padding: 30px;
-      max-width: 300px;
-      margin: 30px auto;
-      border: 2px solid black;
-      align-content: center;
-      background-color: navy;
-    }
-    img {
-      float: center;
-      margin-bottom: 10px;
-      align-content: center;
-    }
-    #profileDisplay li{
-      padding: 5px;
-      width: 95%;
-      border: 1px solid black;
-      margin-bottom: 5px;
-      list-style: none;
-      font-size: 20px;
-      background-color: gainsboro;
-      color: black;
-    }
-    button{
-      width: 100%;
-      padding: 10px;
-      background-color: white;
-      color: black;
-      font-size: 15px;
-    }
-    button:hover{
-      background-color: black;
-      color: white;
-    }
-    button:active{
-      padding: 12px;
-    }
-    h3 {
-      border: none;
-      font-size: 30px;
-      padding: 0px;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Scroller</title>
+    <style>
+        .container,
+        h3 {
+            padding: 30px;
+            max-width: 300px;
+            margin: 30px auto;
+            border: 2px solid black;
+            align-content: center;
+            background-color: navy;
+        }
+        
+        img {
+            float: center;
+            margin-bottom: 10px;
+            align-content: center;
+        }
+        
+        #profileDisplay li {
+            padding: 5px;
+            width: 95%;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            list-style: none;
+            font-size: 20px;
+            background-color: gainsboro;
+            color: black;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+        }
+        
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        button:active {
+            padding: 12px;
+        }
+        
+        h3 {
+            border: none;
+            font-size: 30px;
+            padding: 0px;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-  <h3>Profile Scroller</h3>
-  <div class="container">
-  <div id="imageDisplay">
-  </div>
-  <div id="profileDisplay">
-  </div>
-  <button id="next">Next</button>
-</div>
-  <script src="./app.js"></script>
+    <h3>Profile Scroller</h3>
+    <div class="container">
+        <div id="imageDisplay">
+            <iframe frameborder="2" width="100px" length="100px">
+              
+            </iframe>
+        </div>
+        <div id="profileDisplay">
+        </div>
+        <button id="next">Next</button>
+    </div>
+    <script src="./app.js"></script>
 </body>
+
 </html>

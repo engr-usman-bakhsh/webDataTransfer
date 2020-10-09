@@ -1,4 +1,4 @@
-// he said we briefly discuss about symbls in data types lecture in second section. but we didn't.
+// he said we briefly discuss about symbols in data types lecture in second section. but we didn't.
 // the unique thing about symbols is that every symbol is very unique and this thing make it valuable as object property identifier
 // these are premitive values not constructors, means we can write as
 // const sym1 = Symbol();
@@ -39,9 +39,9 @@ const myObj = {};
 // we'll use it in the following way
 myObj[key1] = 'prop1' // this is a symbol
 myObj[key2] = 'prop2' // this is a symbol
-myObj.key3 = 'prop3';// this is a simple variable
-myObj.key4 = 'prop4';// this is a simple variable
-myObj.key5 = 'prop5';// this is a simple variable
+myObj.key3 = 'prop3'; // this is a simple variable
+myObj.key4 = 'prop4'; // this is a simple variable
+myObj.key5 = 'prop5'; // this is a simple variable
 
 // console.log(myObj)
 // console.log(myObj[key1])
@@ -50,8 +50,8 @@ myObj.key5 = 'prop5';// this is a simple variable
 // symbols are not enumerable in for....in loop
 // simple for loop is not working
 
-for(let i in myObj){
-  console.log(`${i} : ${myObj[i]}`)
+for (let i in myObj) {
+    console.log(`${i} : ${myObj[i]}`)
 }
 
 // another thing is that symbols aare ignored when we are using JSON.stringify 
@@ -60,5 +60,6 @@ for(let i in myObj){
 
 //symbols aare ignored when we are using JSON.stringify 
 console.log(JSON.stringify(myObj))
-console.log(JSON.stringify({key: 'prop'}))
-console.log(JSON.stringify({[Symbol('sym1')]: 'prop'})) // empty object returns
+console.log(JSON.stringify({ key: 'prop' }))
+console.log(JSON.stringify({
+        [Symbol('sym1')]: 'prop' })) // empty object returns

@@ -1,0 +1,1538 @@
+-----------------------------------------------------------------------CSS Starts ------------------------------------------------------
+1- Introduction
+css stands for cascading style sheet. css is the integral part for naking attractive web page. we style the html elements by using css
+
+
+difference between CSS and HTML
+
+1-  HTML stands for hypertext markup language. 
+    CSS stands for cascading style sheets.
+
+2-  HTML is a formating language for a webpage.(that means you can formate your webpage using HTML. you can left align and right align.
+    CSS is called reformating language for a webpage.
+
+3-  HTML is a structural language for a webpage and used to describe the structureof a webpage.
+    CSS is a presentational language for webpage and used to describe the presentation of a webpage.
+
+Defination
+4-  the standard markup language for describing the structure of a webpage.
+    a style sheet language for describing the presentation and design of webpages including colors, fonts and layouts.
+
+
+Implementation
+5-  html is for content and structure of a webpage.
+    css is mainly for presentation and design
+
+
+
+Architecture
+6-  html uses tags that contain contents
+    in css Selectors are declared using block statement syntax.
+
+
+
+Dependency
+7-  HTML syntax and structure formats cannot be used in CSS style sheets.
+    CSS is independent of html and it can be used with any XML based markup language.
+
+
+
+
+
+
+multiple style sheets can be applied to the same webpage. these style sheets are collection of style rules that tells the browser how various styles are applied to the HTML tags to present the document.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2- limitations of css
+we add designs , affects, design asthetics using css on html page. but we cant make interactive, dynamic and real time based website by using only html and css. like we cant make a game using html and css.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+3-  for styling the web pages we consider that each html element is in the hypothetical box. by considering this we can design them.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+4- CSS associate SR with HTML elements.
+ css has all emphasis on styles. styles are the properties of css. to create a style rule we first create a style name or property name and then we assign a vlaue to the style name or property name by using colon
+property-name: value;    this indicates declaring a style rule.
+
+css works by associating style rule with an html element. these rules governed how the content of specified element should br displayed.
+
+A CSS rule contain two parts, a selector and a declaration, for example  P{Color: grey;} in this example "P" is selector and the other thing is declaration. here "P" indicating a paragraph. which means all paragraphs should be displayed in grey color. selectors are actually html elements. we can apply rules on more than on element and we differenriate them by a comma like   h1,P{Color: grey;}
+
+Declaration is sippleted in two parts,  {Property: Value;}
+
+h1,h2,h3{
+   
+  font-family: 	Arial;
+  color:  yellow;     
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Rules</title>
+    <style>
+        h1,
+        h2 {
+            color: rgb(0, 0, 255);
+        }
+        
+        body {
+            background-color: lavender;
+        }
+        
+        p {
+            background-color: lime;
+        }
+        
+        ol {
+            color: maroon;
+        }
+        
+        ul {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This content is about Science</h1>
+    <p>Science is the knowledge gaining by observation and experimentation</p>
+    <h2>Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+5-Types of CSS
+CSS is used to set the styles of html tags. We can use CSS in html page by using three methods 
+1- inline CSS (used to apply styles on individual tags)
+2- internal CSS (as the above example)
+3- external CSS (make another  file with .css extension and link it in HTML page)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+6- inline CSS
+
+< h1 style(property : value;)>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inline CSS</title>
+</head>
+
+<body style="background-color: thistle;">
+    <h1 style="background-color: coral;">This content is about Science</h1>
+    <p style="background-color: cornsilk;">Science is the knowledge gaining by observation and experimentation</p>
+    <h2 style="color: red;">Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+7- Internal and embedded CSS
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Rules</title>
+    <style>
+        h1,
+        h2 {
+            color: rgb(0, 0, 255);
+        }
+        
+        body {
+            background-color: lavender;
+        }
+        
+        p {
+            background-color: lime;
+        }
+        
+        ol {
+            color: maroon;
+        }
+        
+        ul {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This content is about Science</h1>
+    <p>Science is the knowledge gaining by observation and experimentation</p>
+    <h2>Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8- External CSS
+
+
+body {
+    background-color: black;
+}
+
+h1,
+h2 {
+    color: whitesmoke;
+}
+
+ol {
+    color: whitesmoke;
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9- CSS Selectors
+
+CSS selectors allow us to select and allow html elements. css selectors are used to find all selected html elements based on their ID's, class, type attributes etc. CSS selectors are case sensitive so they must match with element names and attribute values exactly. we'll discuss 8 selectors here
+
+1- universal selector (*)
+   this selector targets all the elements of the page. means we can apply any action on all elements at a time.
+
+	*{property-name: value}
+* {
+    background-color: moccasin;
+    font-family: 'Times New Roman';
+}
+
+
+2- Type Selector (,)
+   type selector is also known as element selector. by using type selector we can apply styling to a single element. we just write the element name and all done. if we want to apply same styling on multiple elements, we write their names and differentiate them with (,) as we have done in previous codes.
+
+	a,b,c{Property-name: value;}
+
+th {
+    background-color: blue;
+}
+
+
+
+3- Class selector( . )
+   class selector selects element with the specific class attribute. 
+	body {
+	background-color: thistle;
+	}
+
+	.main-branch {
+	    color: teal;
+	}
+
+	.sub-branch {
+	color: teal;
+	}
+
+	.branch {
+	    color: yellow;
+	}
+	p.cnc {
+	color: value;
+	}
+
+
+4-  ID Selector (#)
+    styles the element with the specified ID. it uses the ID attribute of an HTML element to select a specific element. ID should be unique within a page. ID selector
+    is used if you want to select a single unique element..
+    
+    #id-name { property-name: value;}
+
+
+5-  Child Selector. (>)
+    it will target the direct child of a parent element and will apply styles on it
+
+    parent > child { property-name: value;}
+      
+	ol>li {
+	color: yellow;
+	}
+	
+	ol>li {
+	    color: yellow;
+	}
+	
+	li>ul>li {
+	    color: yellowgreen;
+	}
+
+
+6-   Descendant Selector ( ) "its a space"
+     
+     this selector is used to select the elements inside the elements. it matches an element that is descendant of another specified element not direct child of that
+     element. its like a parent child but it selects that child which is not direct child of a parest tag
+     
+     
+	li {
+	    color: indigo;
+	}
+	
+	ul li {
+	    color: hotpink;
+	}  
+
+
+7- Adjacent Sibling Selectors
+   
+   is used to select element that is placed immediately after that inside the first specified element. its not like child-parent. in this siblings are selected.
+   all siblings are on the same level.
+
+	ul+li {
+	color: mediumturquoise;
+	}
+
+8-  General Sibling Selector
+
+    is used to select all elements that are siblings(not child) of an other
+
+	h1~p {
+	color: mediumturquoise;
+	}
+
+     here all p's will be selected after h1 but p's should be on the same level on the same level.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10- How CSS rules Cascade
+    if we apply more than one rule on an element than which rule will be presidence.????
+    
+	if we apply more that one rule on an element, than last rule will be applied.
+
+>> specificity
+
+jo rule jitna zyada specific ho ga wo hi apply hoga means??? means jo rule jitna detail sy byan kiya jaye ga wo implement ho jaye ga. if we want to assign priority to any rule we'll use "!important" attribute after the property value.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+11- Inheritence
+ 
+ css contains a collection of style rules . if we apply these rules on parents, by default childs inherited that rules. means that rules are also applied on the childs. this is called inheritence. we have different elements which stop this inheritence.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inheritence</title>
+    <style>
+        body {
+            color: blue;
+            padding: 20px;
+        }
+        
+        p {
+            padding: inherit;
+        }
+        
+        div {
+            color: lawngreen;
+        }
+        
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Rules</h1>
+    <p>The woman empowerment division of the <i>Presidential initiative of artificial intelligence and computing</i> is comitted to the <b>eompowerment</b> and autonomy of woman in pakistan</p>
+    <p>PIAIC woman in technology <i>WIT</i> is a <b>group</b> dedicated to providing oppertunities to women</p>
+    <div>to find out more PIAIC WIT, please visit
+        <a href="http://www.piaic.org/wit"> PIAIC WIT</a>
+    </div>
+</body>
+
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+12- Opacity
+is used for changing the darkness and brightness og the color. html5 provides the rgba attributr for this here a indicates the alpha or value of the opacity. its range is from 0 to 1.
+
+we can separately use the opacity by following syntax
+opacity: 0-1;
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Opacity</title>
+    <style>
+        .maindiv {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        
+        .div1 {
+            color: black;
+            background-color: yellow;
+            padding: 50px;
+            opacity: 1;
+        }
+        
+        .div2 {
+            color: black;
+            background-color: yellow;
+            padding: 50px;
+            opacity: .7;
+        }
+        
+        .div3 {
+            color: black;
+            background-color: yellow;
+            padding: 50px;
+            opacity: .4;
+        }
+        
+        .div4 {
+            color: black;
+            background-color: yellow;
+            padding: 50px;
+            opacity: .1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="div1">
+            <h1>
+                opacity 100 %
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div2">
+            <h1>
+                opacity 70%
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div3">
+            <h1>
+                opacity 40 %
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div4">
+            <h1>
+                opacity 10 %
+            </h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13- rgba practice
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Opacity</title>
+    <style>
+        .maindiv {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        
+        .div1 {
+            color: rgba(20, 20, 30, 1);
+            background-color: rgba(150, 100, 200, 1);
+            padding: 50px;
+        }
+        
+        .div2 {
+            color: rgba(20, 20, 30, .7);
+            background-color: yellow;
+            background-color: rgba(150, 100, 200, .7);
+            padding: 50px;
+        }
+        
+        .div3 {
+            color: rgba(20, 20, 30, .4);
+            background-color: yellow;
+            background-color: rgba(150, 100, 200, .4);
+            padding: 50px;
+        }
+        
+        .div4 {
+            color: rgba(20, 20, 30, .1);
+            background-color: yellow;
+            background-color: rgba(150, 100, 200, .1);
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="div1">
+            <h1>
+                opacity 100 %
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div2">
+            <h1>
+                opacity 70%
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div3">
+            <h1>
+                opacity 40 %
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div4">
+            <h1>
+                opacity 10 %
+            </h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14- HSL and HSLA
+ the HSL value define color HUE saturation lightness model and HSL stands for (hue, saturation, lightness). HSL is alternative way to define the colors in css.
+HSL (0,100,50) is equal to red color
+
+and in HSLA the A defines the alpha number from 0 to 1. 0 means fully transparrent and 1 mean sfully opaque. actually A defines the opacity.
+HUE defines the degree on the color circle from 0 to 360, 0 is red, 120 is green, 240 is blue, HUE can also be shown as a slider.
+saturation defines the saturation, 0% is the shade ogf grey, and 100% is full color means full saturation, saturation is represented as a percentage. 100% means full saturation which is the pure color and 0% is the shade of gray. saturation is inversely related with gray color.  saturation increases gray color decreases, saturation dcreases gray color increases. so saturation is the mount of gray in a color.
+
+Lightness is reffered as the amount of luminosity, its also represented in percentage. 100% means whiteness, 0% means darkness(black color). lightness is a different concept from brightness.
+brightness only add black while lightness adds both black and white.	
+
+
+
+>> HSL
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Opacity</title>
+    <style>
+        .maindiv {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        
+        .div1 {
+            color: hsl(240, 40%, 40%);
+            background-color: hsl(90, 40%, 40%);
+            padding: 50px;
+        }
+        
+        .div2 {
+            color: hsl(240, 60%, 60%);
+            background-color: hsl(90, 60%, 60%);
+            padding: 50px;
+        }
+        
+        .div3 {
+            color: hsl(240, 80%, 80%);
+            background-color: hsl(90, 80%, 80%);
+            padding: 50px;
+        }
+        
+        .div4 {
+            color: hsl(240, 80%, 80%);
+            background-color: hsl(90, 100%, 100%);
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="div1">
+            <h1>
+                lightness 40%
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div2">
+            <h1>
+                lightness 60%
+
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div3">
+            <h1>
+                lightness 80%
+
+            </h1>
+        </div>
+    </div>
+    <div class="maindiv">
+
+        <div class="div4">
+            <h1>
+                lightness 100%
+
+            </h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+>>>>HSLA
+ similarly we can add opacity in it
+
+
+
+----------------------------------------------------------------------------------------------------
+
+15- ph scale
+
+
+
+css file
+
+
+body {
+    background-color: silver;
+    color: white;
+    padding: 5px;
+}
+
+h1 {
+    background-color: white;
+    color: rgba(0, 0, 0, .5);
+    padding: inherit;
+    text-align: center;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+html------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PH Scale</title>
+    <link rel="stylesheet" href="./phscale.css">
+</head>
+
+<body>
+    <h1> PH Scale for Indication of Acidic and Basic Elements</h1>
+    <p class="fourteen">14 <b>Highly Alkaline</b></p>
+    <p class="thirteen">13</p>
+    <p class="twelve">12</p>
+    <p class="eleven">11</p>
+    <p class="ten">10</p>
+    <p class="nine">9</p>
+    <p class="eight">8</p>
+    <p class="seven">7 <b>Neutral</b></p>
+    <p class="six">6</p>
+    <p class="five">5</p>
+    <p class="four">4 </p>
+    <p class="three">3</p>
+    <p class="two">2</p>
+    <p class="one">1</p>
+    <p class="zero">0 <b>Highly Acidic</b></p>
+
+</body>
+
+</html>
+
+p.fourteen {
+    background-color: hsla(240, 100%, 20%, 1);
+}
+
+p.thirteen {
+    background-color: hsla(240, 100%, 25%, 1);
+}
+
+p.twelve {
+    background-color: hsla(240, 100%, 30%, 1);
+}
+
+p.eleven {
+    background-color: hsla(240, 100%, 35%, 1);
+}
+
+p.ten {
+    background-color: hsla(240, 100%, 40%, 1);
+}
+
+p.nine {
+    background-color: hsla(240, 100%, 45%, 1);
+}
+
+p.eight {
+    background-color: hsla(240, 100%, 50%, 1);
+}
+
+p.seven {
+    background-color: hsla(120, 100%, 20%, 1);
+}
+
+p.six {
+    background-color: hsla(0, 100%, 50%, 1);
+}
+
+p.five {
+    background-color: hsla(0, 100%, 45%, 1);
+}
+
+p.four {
+    background-color: hsla(0, 100%, 40%, 1);
+}
+
+p.three {
+    background-color: hsla(0, 100%, 35%, 1);
+}
+
+p.two {
+    background-color: hsla(0, 100%, 30%, 1);
+}
+
+p.one {
+    background-color: hsla(360, 100%, 25%, 1);
+}
+
+p.zero {
+    background-color: hsla(360, 100%, 20%, 1);
+}
+
+
+
+
+
+
+
+
+
+
+==========      ===============           =======================            ===============   
+
+colors 
+>>Color not only brings your site to life, but also helps convey the mood and evokes reactions.
+	here are three ways to specify colors in CSS:
+>>RGB values, hex codes, and color names.
+>> Color pickers can help you find the color you want.
+>> It is important to ensure that there is enough contrast between any text and the background
+	color (otherwise people will not be able to read your content).
+>> CSS3 has introduced an extra value for RGB colors to indicate opacity. It is known as RGBA.
+>> CSS3 also allows you to specify colors as HSL values, with an optional opacity value. It is
+   known as HSLA.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+============================================================================================================================================------=================
+
+
+
+
+-------------------------------------------------------------------------------  chapter no 12 TEXT -----------------------------------------------------------------
+
+
+16- Font family
+>>font-family: arial;
+
+>> font-size: -------;
+  the font size property enables you to specify the size of the font. there are several ways to specify the size of fonts,
+	1- Pixels .,,Pixels are commonly used because they allow web designers very precise control over how much space their text takes up. The number of pixels is
+		followed by the letters px .
+	2-Percentage,... The default size of text in browsers is 16px. So a size of 75% would be the equivalent of 12px, and 200% would be 32px. If you create a rule to
+	make all text inside the <body> element to be 75% of the default size (to make it 12px), and then specify another rule that indicates the content of an element
+	inside the <body> element should be 75% size, it will be 9px (75% of the 12px font size).
+
+	3- EMS. an em is equavalent to the width of a letter m.
+ body {
+font-family: Arial, Verdana, sans-serif;
+font-size: 12px;}
+h1 {
+font-size: 200%;}
+h2 {
+font-size: 1.3em;}
+
+
+>>  @font-face
+    allows you to use a font which is not installed on the persons browser with a specified path url to download it.
+@font-face {
+font-family: 'ChunkFiveRegular';
+src: url('fonts/chunkfive.eot');}
+h1, h2 {
+font-family: ChunkFiveRegular, Georgia, serif;}
+
+>> font-weight
+	The font-weight property allows you to create bold text. There are two values that this property commonly takes:
+	1- normal and 	2- bold
+>> font-style
+
+	If you want to create italic text, you can use the font-style property. There are three values this property can take:
+	1-normal	2- italic	3- oblique
+
+>> text-transform
+
+	The text-transform property is used to change the case of text giving it one of the following values:
+	1-uppercase 	2- lowercase	3-capitalized(this cause first letter of each word capitalized)
+
+>> text-decoration
+	
+	this property allows you to specify the following rules,
+
+	>>none, this removes any decoration already applied to the text
+	>> underline, this add a line underneath a text
+	>> overline, this add a line over the top of the text
+	>> line-through, this add a line through the word,
+	>> blink, this make te text to make it flash of and on,
+
+
+
+							LEADING
+>> line-height,
+		Leading (pronounced ledding) is a term typographers use for the vertical space between lines of text. In a typeface, the part of a letter that drops
+		beneath the baseline is called a descender, while the highest point of a letter is called the ascender. Leading is measured from the bottom of the
+		descender on one line to the top of the ascender on the next.
+
+p {
+line-height: 1.4em;}
+
+
+
+
+							LETTER AND WORD SPACING
+
+>> letter-spacing
+>> word-spacing
+
+
+
+							TEXT Allign
+
+>> text-align
+	1-left		2-right		3-center	4-justify
+
+>> vertical allign
+	1- baseline	2- sub	3-super 	4-top	5-text-top	6-middle	7-bottom	8-text-bottom
+
+>> text shadow
+	The text-shadow property has become commonly used despite lacking support in all browsers. It is used to create a drop shadow, which is a dark version of the
+	word just behind it and slightly offset. It can also be used to create an embossed effect by adding a shadow that is slightly lighter than the text.
+ 
+	The value of this property is quite complicated because it can take three lengths and a color for the drop shadow. The first length indicates how far to the 		left or right the shadow should fall. The second value indicates the distance to the top or bottom that the shadow should fall. The third value is optional and 	specifies the amount of blur that should be applied to the drop shadow. The fourth value is the color of the drop shadow
+
+
+text-shadow: 1px 1px 0px #000000
+
+>>:first-letter, :first-line
+
+	You can specify different values for the first letter or first line of text inside an element using :first-letter and :first-line .Technically these are not
+	properties. They are known as pseudo-elements.
+
+
+p.intro:first-letter {
+font-size: 200%;}
+p.intro:first-line {
+font-weight: bold;}
+
+
+
+>> :link, :visited
+
+a:link {
+color: deeppink;
+text-decoration: none;}
+a:visited {
+color: black;}
+a:hover {
+color: deeppink;
+text-decoration: underline;}
+a:active {
+color: darkcyan;}
+
+
+	Browsers tend to show links in blue with an underline by default, and they will change the color of links that have been visited to help users know which pages 	they have been to.
+	In CSS, there are two pseudo- classes that allow you to set different styles for links that have and have not yet been visited
+:link
+	This allows you to set styles for links that have not yet been visited.
+:visited
+
+	This allows you to set styles for links that have been clicked on.
+
+
+
+	There are three pseudo-classes that allow you to change the appearance of elements when a user is interacting with them.
+
+
+:hover
+	
+	This is applied when a user hovers over an element with a pointing device such as a mouse. This has commonly been used to change the appearance of links and
+	buttons when a user places their cursor over them. It is worth noting that such events do not work on devices that use touch screens (such as the iPad) because
+	the screen is not able to tell when someone is hovering their finger over an element.
+
+
+input.submit:hover {
+background-color: #665544;}
+
+
+:active
+
+	This is applied when an element is being activated by a user; for example, when a button is being pressed or a link being clicked. Sometimes this is used to make
+	a button or link feel more like it is being pressed by changing the style or position of the element slightly.
+
+
+
+:focus
+
+	This is applied when an element has focus. Any element that you can interact with, such as a link you can click on or any form control can have focus. Focus
+	occurs when a browser discovers that you are ready to interact with an element on the page. For example, when your cursor is in a form input ready to accept
+	typing, that element is said to have focus. It is also possible to use the tab key on your keyboard to move through the interactive items on a page. When pseudo
+	classes are used, they should appear in this order: :link , :visited , :hover , :focus , :active .
+
+
+input {
+padding: 6px 12px 6px 12px;
+border: 1px solid #665544;
+color: #ffffff;}
+input.submit:hover {
+background-color: #665544;}
+input.submit:active {
+background-color: chocolate;}
+input.text {
+color: #cccccc;}
+input.text:focus {
+color: #665544;}
+
+									SUMMARY
+
+>> There are properties to control the choice of font, size, weight, style, and spacing.
+>> There is a limited choice of fonts that you can assume most people will have installed.
+>> If you want to use a wider range of typefaces there are several options, but you need to have the right license to use them.
+>>You can control the space between lines of text, individual letters, and words. Text can also be aligned to the left, right, center, or justified. It can also be
+	indented.
+>>You can use pseudo-classes to change the style of an element when a user hovers over or clicks on text, or when they have visited a link.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+================================================================================================================================================================
+
+
+
+---------------------------------------------------CHAPTER NO 13 BOXES -------------------------------------------------------------------------------------
+
+17-Boxes
+you can set several properties that effect the appearance of boxes e,g,.
+1- control the dimension of your box
+2- create borders around box
+3- set margine and padding aroung box
+4- show and hide box
+
+
+--------------------------------------------------------------------------------------------------------
+
+18- min height, max height, min width, max width, overflow=hidden/scroll
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div.box1 {
+            height: 600px;
+            width: 600px;
+            background-color: #bbbbaa;
+        }
+        
+        p.box2 {
+            height: 50%;
+            width: 50%;
+            background-color: #0088dd;
+            overflow: scroll;
+            min-width: 250px;
+            max-width: 450px;
+            text-align: left;
+            min-height: 200px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Dimensons</h1>
+    <div class="box1">
+        <p class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, tempora eum exercitationem quod, quos mollitia placeat ad deleniti voluptate, laboriosam sapiente ex delectus repudiandae corrupti labore culpa. Amet, odit quas. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Corrupti ducimus eum incidunt ab, reiciendis beatae voluptates explicabo! Iusto magni, quos molestiae nulla minus id, tempora nostrum distinctio, cupiditate nam quibusdam? Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Est, nisi voluptate commodi quas temporibus sint laudantium hic eligendi, nulla dolores quae quia facere mollitia modi omnis odit ipsum suscipit incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore a
+            architecto illum fugiat dolores minus impedit sapiente, culpa suscipit vel earum dolorum molestiae nulla temporibus, corrupti, distinctio ex? Quaerat, et.
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19- Border , Margine and padding.
+	every box has three available properties that can be adjusted to control its appearance.
+
+	1- Border, every box has a border even if its visible or not, the border separate the edge of one box from other.
+	2- Margine, sit outside the edge of the border , you can set the width of a margine to create a gap between the borders of two adjacent boxes.
+	3- Padding, is the space between the border of a box and any content contained within it, adding padding increase the readibility of the content.
+
+if you specify a width of a box, than the border, margine and padding are added to its height and width.
+
+white saces and vertical margine, the padding and margine properties are very helpfull in adding space,between variour itoms of a page.
+
+	If the bottom margin of any box touches the top margin of another, the browser will render it differently than you might expect. It will only show the larger of
+	the two margins. If both margins are the same size, it will only show one.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+20- border width (thin,medium,thick)
+
+for individual side border
+border-top-width
+border-right-width
+border-bottom-width
+border-left-width
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+21- border-style (solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, none)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+22- border-color
+ for individual side
+
+border-top-color
+border-right-color
+border-bottom-color
+border-left-color
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+									SHORTHAND
+
+23- border
+The border property allows you to specify the width, style and color of a border in one property (and the values should be coded in that specific order).
+
+
+p {
+width: 250px;
+border: 3px dotted #0088dd;}
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24- Padding.
+
+The padding property allows you to specify how much space should appear between the content of an element and its border.
+
+The value of this property is most often specified in pixels (although it is also possible to use percentages or ems). If a percentage is used, the padding is a percentage of the browser window (or of the containing box if it is inside another box). Please note: If a width is specified for a box, padding is added onto the width of the box.
+
+p {
+width: 275px;
+border: 2px solid #0088dd;}
+p.example {
+padding: 10px;}
+
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+25- Margine,
+
+
+The margin property controls the gap between boxes. Its value is commonly given in pixels, although you may also use percentages or ems.
+
+If one box sits on top of another, margins are collapsed , which means the larger of the two margins will be used and the smaller will be disregarded.
+
+Please note: If the width of a box is specified then the margin is added to the width of the box.
+
+You can specify values for each side of a box using:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+
+p {
+width: 200px;
+border: 2px solid #0088dd;
+padding: 10px;}
+p.example {
+margin: 20px;}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        p.border {
+            border-width: 5px;
+            border-style: solid;
+            border-color: brown;
+            padding: 5px;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <h1>border thickness </h1>
+    <p class="border">
+        Lorem ipsum, dolor sit amet coniciatis alias impedit vel <br> quisquam, magni necessitatibus. Lorem, ipsum dolor sit amet <br> conaf onsequatur qui perferendis repellat eum voluptas earum. <br> Lorem ipsum, dolor sit amet consdf ero nostrum facere,
+        eligendi quidem, assumenda eius?
+    </p>
+
+</body>
+
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+26- Change inline/block elements
+
+	Display,
+	the display property is used to turn the inline elements to block level elements and vice versa. its also used to hide an element.
+
+1- inline. this causes a block level element to inline element
+2- block, this causes an inline element to block level element.
+3- inline-block, This causes a block-level element to flow like an inline element, while retaining other features of a block-level element.
+4- none. this hide an element from the page
+
+
+				====This technique is often used to create navigation for a site,====
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        li {
+            display: inline;
+            margin-left: 150px;
+            background-color: white;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>portfolio</li>
+        <li>product</li>
+        <li>services</li>
+        <li>about </li>
+        <li>contact</li>
+    </ul>
+</body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+27- Hiding Boxes.
+
+The visibility property allows you to hide boxes from users but It leaves a space where the element would have been.
+
+This property can take two values:
+	1- hidden, This hides the element.
+	2- visible, This shows the element. If the visibility of an element is set to hidden , a blank space will appear in its place.
+
+If you do not want a blank space to appear, then you should use the display property with a value of none instead (as covered on the previous page).
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+28- box shadows
+
+The box-shadow property allows you to add a drop shadow around a box. It works just like the text-shadow. It must use at least the first of these two values as well as a color
+
+1-Horizontal offset
+	Negative values position the shadow to the left of the box.
+2-Vertical offset
+	Negative values position the shadow to the top of the bo
+3-Blur distance
+	If omitted, the shadow is a solid line like a border.
+4-Spread of shadow
+	If used, a positive value will cause the shadow to expand in all directions, and a negative value will make it contract
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+29- Round Corner (border radius)
+
+CSS3 introduces the ability to create rounded corners on any box, using a property called border-radius . The value indicates the size of the radius in pixels.
+
+
+border-top-right-radius
+border-bottom-right-radius
+border-bottom-left-radius
+border-top-left-radius
+
+
+
+border-radius: 5px, 10px, 5px, 10px;
+------------------------------------------------------------------------------------------------------------------------------------------
+
+30- Summary
+
+>> CSS treats each HTML element as if it has its own box.
+>> You can use CSS to control the dimensions of a box.
+>> You can also control the borders, margin and padding for each box with CSS.
+>> It is possible to hide elements using the display and visibility properties.
+>> Block-level boxes can be made into inline boxes, and inline boxes made into block-level boxes.
+>> Legibility can be improved by controlling the width of boxes containing text and the leading.
+>> CSS3 has introduced the ability to create image borders and rounded borders.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+=======================================================================================================================================================
+
+
+
+-------------------------------------------------------------- Chapter No 14 Lists, Tables and Forms ---------------------------------------------------------
+
+
+31- Bullet Point Styles
+
+>> list-style-type- the list-style-type property allows you to control the shape or style of bullet points(also known as marker)
+
+the value of this property is 
+
+1-Unordered list (none, disc, circle, square)
+2- ordered list (decimal, decimal-leading-zero(01,02,03...),lower-alpha,upper-alpha,lowe-roman,upper-roman)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+32- Image for bullets
+>>list-style-image
+
+you can specify an image to act as a bullet point using this property
+
+ul {
+list-style-image: url("images/star.png");}
+li {
+margin: 10px 0px 0px 0px;}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+33- Position the marker
+
+>>list-style-position
+this property defines that if the bullets are inside or outside the main points. it can carry two values
+1-inside
+2-outside
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+34- List Shorthand
+
+>>list-style
+it allows you to express the markers' style, image and position properties in any order.
+
+ul {
+list-style: inside circle;
+width: 300px;}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+35- table properties
+
+1-width 
+2-padding (to set the space between the borders of each table)
+3-text-transform(to convert the content of the table headers to uppercase)
+4-letter-spacing, font-size
+5- border-top,border-bottom(to set border above and below the table header)
+6- text-align
+7- background-color
+8- :hover
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+36- border on empty cells
+	If you have empty cells in your table, then you can use the empty-cells property to specify whether or not their borders should be shown.
+it can take one of three values
+1-show
+2-hide
+3-inherent
+
+
+table.one {
+empty-cells: show;}
+table.two {
+empty-cells: hide;}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+37- gap between cells
+
+>>border-spacing (borders are detached to each other)
+>> border-collapse ( border are collapsed into a single border)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+38- Summary
+
+>>In addition to the CSS properties covered in other chapters which work with the contents of all elements, there are several others that are specifically used to
+   control the appearance of lists, tables, and forms.
+>> List markers can be given different appearances using the list-style-type and list-style image properties.
+>> Table cells can have different borders and spacing in different browsers, but there are properties you can use to control them and make them more consistent.
+>> Forms are easier to use if the form controls are vertically aligned using CSS.
+>> Forms benefit from styles that make them feel more interactive.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+\=============================================================================================================================================
+
+-----------------------------------------------------Chapter No 15 Layout ---------------------------------------------------------------------------
+
+39- Layout
+
+If one block-level element sits inside another block-level element then the outer box is known as the containing or parent element.
+
+A box may be nested inside several other block-level elements. The containing element is always the direct parent of that element.
+
+It is common to group a number of elements together inside a <div> (or other block-level) element. For example, you might group together all of the elements that form the header of a site (such as the logo and the main navigation). The <div> element that contains this group of elements is then referred to as the containing element.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+40- controlling the position of element
+
+CSS has the following positioning schemes that allow you to control the layout of a page: normal flow, relative positioning, and absolute positioning. You specify the positioning scheme using the position property in CSS. You can also float elements using the float property.
+
+1-Normal flow
+
+Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. Even if you specify the width of the boxes and there is space for two elements to sit side-by- side, they will not appear next to each other. This is the default behavior (unless you tell the browser to do something else).
+
+2- Relative positioning
+
+This moves an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of surrounding elements; they stay in the position they would be in in normal flow.
+
+
+3-Absolute Positioning 
+
+This positions the element in relation to its containing element. It is taken out of normal flow, meaning that it does not affect the position of any surrounding elements (as they simply ignore the space it would have taken up). Absolutely positioned elements move as users scroll up and down the page.
+
+
+To indicate where a box should be positioned, you may also need to use box offset properties to tell the browser how far from the top or bottom and left or right it should be placed. (You will meet these when we introduce the positioning schemes on the following pages.)
+
+
+a- Fixed Positioning Scheme (Absolute Positioning)
+
+This is a form of absolute positioning that positions the element in relation to the browser window, as opposed to the containing element. Elements with fixed positioning do not affect the position of surrounding elements and they do not move when the user scrolls up or down the page.
+
+b- Floating Elemet
+Floating an element allows you to take that element out of normal flow and position it to the far left or right of a containing box. The floated element becomes a block-level element around which other content can flow.
+
+When you move any element from normal flow, boxes can overlap. The z-index property allows you to control which box appears on top.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+41- Normal Flow
+>> position: static;
+
+
