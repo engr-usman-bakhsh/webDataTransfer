@@ -1,0 +1,28 @@
+        /* CSS Grifd System
+        > Grip Layout System for CSS
+        > Similar to flexBox(more powerfull but a bit more difficult)
+        > two dimensional layout
+        > Can use "align-items","justify-contents",etc
+        > partial support for IE11(internet explorrer 11)
+
+        */
+        /* 
+        > display: grid; (create a "grid")
+        > All direct child elements are "Grid Items",
+        > "grid-template-columns" defines width and number of columns
+        > new unit for measuremnet FRfraction has been introduced
+        > 
+        */
+        /*  Difference between Flex and Grid */
+
+        /* 
+        > Flex is capable to handle the flex items in a single row or column,(one dimensional)
+        > But Grid is capable to handle the grid-items in 2-dimensional
+        > Row sapnning and column spaning is used in grid system
+        > we can span across rows, columns and both rows and columns
+        > Grid and Flex both have different use cases
+        > It is not ONE or the OTHER
+        > Use CSS grid fro outer elements and grid like layout 
+        > use flex for simple alignment (inner elements, menu items etc )
+        > 
+        */
